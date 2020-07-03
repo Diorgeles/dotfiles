@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "coc-explorer": ">=0.7.13",
+    "coc-highlight": ">=1.2.5",
+    "coc-json": ">=1.2.6",
+    "coc-prettier": ">=1.1.14",
+    "coc-snippets": ">=2.1.28",
+    "coc-tslint-plugin": ">=1.1.1",
+    "coc-tsserver": ">=1.5.2",
+    "coc-yaml": ">=1.0.4"
+  }
+}
