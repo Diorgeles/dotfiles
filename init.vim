@@ -2,69 +2,90 @@ call plug#begin()
 " Temas
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
-Plug 'morhetz/gruvbox'
 Plug 'rakr/vim-one'
+Plug 'arcticicestudio/nord-vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'sainnhe/forest-night'
+Plug 'sainnhe/gruvbox-material'
+Plug 'rhysd/vim-color-spring-night'
+Plug 'sainnhe/edge'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'sheerun/vim-polyglot'
+
 " Editor
-Plug 'yggdroot/indentline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-obsession' " save session
 Plug '907th/vim-auto-save'
+Plug 'Yggdroot/indentLine'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'unblevable/quick-scope'
+
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
+
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 call plug#end()
 
 " Tema
-colorscheme one
-
 set background=dark
-let g:airline_theme='one'
+" colorscheme OceanicNext
+" colorscheme gruvbox
+" colorscheme nord
+" colorscheme dracula
+" colorscheme one
+" colorscheme spring-night
+" colorscheme gruvbox-material
+colorscheme forest-night
+" let g:edge_style = 'neon'
+" colorscheme edge 
+
+" let g:airline_theme='oceanicnext'
+" let g:airline_theme='gruvbox'
+" let g:airline_theme='dracula'
+let g:airline_theme='forest_night'
+" let g:airline_theme='edge'
 
 if (has("termguicolors"))
  set termguicolors
 endif
 syntax on
-let g:auto_save = 1  " enable AutoSave on Vim startup
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
-let g:airline_powerline_fonts = 1                                                                                                         
 
 "TABLINE:                                                                                                                                 
+let g:airline_powerline_fonts = 1                                                                                                         
 let g:airline#extensions#tabline#enabled = 1           " enable airline tabline                                                           
-" let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-let g:airline#extensions#tabline#show_close_button = 0 " remove 'X' at the end of the tabline                                            
-let g:airline#extensions#tabline#tabs_label = ''       " can put text here like BUFFERS to denote buffers (I clear it so nothing is shown)
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#buffers_label = ''    " can put text here like TABS to denote tabs (I clear it so nothing is shown)      
-let g:airline#extensions#tabline#fnamemod = ':t'       " disable file paths in the tab                                                    
-let g:airline#extensions#tabline#show_tab_count = 0    " dont show tab numbers on the right                                                           
-let g:airline#extensions#tabline#show_buffers = 0      " dont show buffers in the tabline                                                 
+let g:airline#extensions#tabline#show_close_button = 0 " remove 'X' at the end of the tabline                                            
 let g:airline#extensions#tabline#tab_min_count = 2    " minimum of 2 tabs needed to display the tabline                                  
+let g:airline#extensions#tabline#show_buffers = 0      " dont show buffers in the tabline                                                 
 let g:airline#extensions#tabline#show_splits = 0       " disables the buffer name that displays on the right of the tabline               
-let g:airline#extensions#tabline#show_tab_nr = 1       " disable tab numbers                                                              
+let g:airline#extensions#tabline#tabs_label = ''       " can put text here like BUFFERS to denote buffers (I clear it so nothing is shown)
+let g:airline#extensions#tabline#show_tab_nr = 0       " disable tab numbers                                                              
+" let g:airline#extensions#tabline#show_tab_count = 0    " dont show tab numbers on the right                                                           
 
 " General
+" let g:auto_save = 1  " enable AutoSave on Vim startup
 set mouse=a
 set hidden
-" set nu
+set nu
 " set regexpengine=1
 set ttyfast
 set lazyredraw
-set redrawtime=10000
+" set redrawtime=10000
 set relativenumber
 set inccommand=split
 set incsearch
