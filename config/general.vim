@@ -47,9 +47,16 @@ let g:startify_session_delete_buffers = 1
 let g:startify_fortune_use_unicode = 1
 let g:startify_enable_special = 0
 let g:startify_bookmarks = [
-            \ { 'c': '~/.config/nvim/config/general.vim' },
+            \ { 'c': '~/.config/nvim/config/themes.vim' },
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
             \ ]
+let g:webdevicons_enable_startify = 1
+
+function! StartifyEntryFormat()
+  return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
+endfunction
+
+
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 

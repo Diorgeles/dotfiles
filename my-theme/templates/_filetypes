@@ -1,0 +1,244 @@
+# vim: ft=colortemplate fdm=marker
+
+# Filetype specific groups
+#if get(g:, "@optionprefix_filetype_hi_groups", 0)
+# Diff {{{
+diffAdded                        green  none
+diffRemoved                      red    none
+diffChanged                      aqua   none
+
+diffFile                         orange none
+diffNewFile                      yellow none
+
+diffLine                         blue   none
+# }}}
+# HTML {{{
+htmlTag                          blue   none
+htmlEndTag                       blue   none
+
+htmlTagName                      aqua   none    bold
+htmlArg                          aqua   none
+
+htmlScriptTag                    purple none
+htmlTagN                         fg1    none
+htmlSpecialTagName               aqua   none    bold
+
+htmlLink                         fg4    none    underline
+
+htmlSpecialChar                  orange none
+
+htmlBold                         fg     bg0     bold
+htmlBoldUnderline                fg     bg0     bold,underline
+htmlBoldItalic                   fg     bg0     bold,italic
+htmlBoldUnderlineItalic          fg     bg0     bold,underline,italic
+
+htmlUnderline                    fg     bg0     underline
+htmlUnderlineItalic              fg     bg0     underline,italic
+htmlItalic                       fg     bg0     italic
+# }}}
+# XML {{{
+xmlTag                           blue   none
+xmlEndTag                        blue   none
+xmlTagName                       blue   none
+xmlEqual                         blue   none
+docbkKeyword                     aqua   none    bold
+
+xmlDocTypeDecl                   grey   none
+xmlDocTypeKeyword                purple none
+xmlCdataStart                    grey   none
+xmlCdataCdata                    purple none
+dtdFunction                      grey   none
+dtdTagName                       purple none
+
+xmlAttrib                        aqua   none
+xmlProcessingDelim               grey   none
+dtdParamEntityPunct              grey   none
+dtdParamEntityDPunct             grey   none
+xmlAttribPunct                   grey   none
+
+xmlEntity                        orange none
+xmlEntityPunct                   orange none
+# }}}
+# Vim {{{
+vimCommentTitle                  fg4    none    bold
+vimNotation                      orange none
+vimBracket                       orange none
+vimMapModKey                     orange none
+vimFuncSID                       fg3    none
+vimSetSep                        fg3    none
+vimSep                           fg3    none
+vimContinue                      fg3    none
+# }}}
+# Python {{{
+pythonBuiltin                    orange none
+pythonBuiltinObj                 orange none
+pythonBuiltinFunc                orange none
+pythonFunction                   aqua   none
+pythonDecorator                  red    none
+pythonInclude                    blue   none
+pythonImport                     blue   none
+pythonRun                        blue   none
+pythonCoding                     blue   none
+pythonOperator                   red    none
+pythonException                  red    none
+pythonExceptions                 purple none
+pythonBoolean                    purple none
+pythonDot                        fg3    none
+pythonConditional                red    none
+pythonRepeat                     red    none
+pythonDottedName                 green  none    bold
+# }}}
+# CSS {{{
+cssBraces                        blue   none
+cssFunctionName                  yellow none
+cssIdentifier                    orange none
+cssClassName                     green  none
+cssColor                         blue   none
+cssSelectorOp                    blue   none
+cssSelectorOp2                   blue   none
+cssImportant                     green  none
+cssVendor                        fg1    none
+
+cssTextProp                      aqua   none
+cssAnimationProp                 aqua   none
+cssUIProp                        yellow none
+cssTransformProp                 aqua   none
+cssTransitionProp                aqua   none
+cssPrintProp                     aqua   none
+cssPositioningProp               yellow none
+cssBoxProp                       aqua   none
+cssFontDescriptorProp            aqua   none
+cssFlexibleBoxProp               aqua   none
+cssBorderOutlineProp             aqua   none
+cssBackgroundProp                aqua   none
+cssMarginProp                    aqua   none
+cssListProp                      aqua   none
+cssTableProp                     aqua   none
+cssFontProp                      aqua   none
+cssPaddingProp                   aqua   none
+cssDimensionProp                 aqua   none
+cssRenderProp                    aqua   none
+cssColorProp                     aqua   none
+cssGeneratedContentProp          aqua   none
+# }}}
+#PanglossJS {{{
+jsImport                         cyan   none
+jsExport                         cyan   none
+jsFrom                           cyan    none
+jsThis                           red    none
+jsParen                          blue   none
+jsForAwait                       cyan   none
+jsOperator                       aqua   none
+jsSpreadOperator                 green  none
+jsSpreadExpression               blue   none
+jsClassKeyword                   red    none
+jsClassProperty                  green  none
+jsExtendsKeyword                 red    none
+jsExportDefault                  orange none bold
+jsTemplateBraces                 aqua   none
+jsGlobalNodeObjects              fg1    none
+jsGlobalObjects                  yellow    none
+jsFunction                       purple  none
+jsFuncParens                     purple none
+jsFuncBlock                      blue   none
+jsParens                         fg3    none
+jsNull                           purple none
+jsUndefined                      purple none
+jsClassDefinition                yellow none
+jsFunctionKey                    green  none
+jsBracket                        red    none
+jsObjectColon                    cyan   none
+jsObjectProp                     blue   none
+jsFuncBraces                     fg1    none
+jsVariableDef                    yellow none
+jsObjectValue                    blue   none
+jsDestructuringBlock             yellow none
+jsParenIfElse                    blue   none
+jsClassBlock                     blue   none
+jsFutureKeys                     orange none bold
+jsStorageClass                   purple none
+jsVariableDef                    lightred none 
+jsModuleKeyword                  blue   none
+jsObjectShorthandProp            blue   none
+jsxRegion                        blue   none
+jsNoise                          cyan   none
+jsObjectKey                       teal   none
+jsFuncCall                      skyblue  none 
+jsConditional                   cyan  none
+jsRepeat                        cyan  none
+jsDo                            cyan none 
+jsTry                           cyan none
+jsCatch                         cyan none
+jsFinally                       cyan none
+# }}}
+# JSx{{{
+jsxTagName                       blue   none
+jsxComponentName                 yellow none
+jsxEscapeJsAttributes            blue   none
+jsxEscapeJsContent               blue   none
+jsxAttrib                        yellow none
+jsxAttributeBraces               fg1    none
+jsxEqual                         aqua   none
+jsxString                        green  none
+jsxCloseTag                      blue   none
+jsxEndTag                        blue   none
+jsxEndString                     blue   none
+jsxCloseString                   blue   none
+jsxIfOperator                    aqua   none
+jsxElseOperator                  aqua   none
+jsxDot                           fg1    none
+jsxNamespace                     blue   none
+jsxPunct                         aqua   none
+#}}}
+# TypeScript {{{
+typeScriptReserved               aqua   none
+typeScriptLabel                  aqua   none
+typeScriptFuncKeyword            aqua   none
+typeScriptIdentifier             orange none
+typeScriptBraces                 fg1    none
+typeScriptEndColons              fg1    none
+typeScriptDOMObjects             fg1    none
+typeScriptAjaxMethods            fg1    none
+typeScriptLogicSymbols           fg1    none
+typeScriptDocSeeTag           -> Comment
+typeScriptDocParam            -> Comment
+typeScriptDocTags             -> vimCommentTitle
+typeScriptGlobalObjects          fg1    none
+typeScriptParens                 fg3    none
+typeScriptOpSymbols              fg3    none
+typeScriptHtmlElemProperties     fg1    none
+typeScriptNull                   purple none
+typeScriptInterpolationDelimiter aqua   none
+# }}}
+# JSON {{{€ý,€ý,
+jsonKeyword                      green  none
+jsonQuote                        green  none
+jsonBraces                       fg1    none
+jsonString                       fg1    none
+# }}}
+# Boldface {{{
+Variant: gui
+verbatim
+if !get(g:, '@optionprefix_bold', 1)
+  hi htmlTagName gui=NONE cterm=NONE
+  hi htmlSpecialTagName gui=NONE cterm=NONE
+  hi htmlBold gui=NONE cterm=NONE
+  hi htmlBoldUnderline gui=underline cterm=underline
+  hi htmlBoldItalic gui=italic cterm=italic
+  hi htmlBoldUnderlineItalic gui=underline,italic cterm=underline,italic
+  hi docbkKeyword gui=NONE cterm=NONE
+  hi vimCommentTitle gui=NONE cterm=NONE
+  hi clojureRegexpCharClass gui=NONE cterm=NONE
+  hi pythonDottedName gui=NONE cterm=NONE
+  hi jsExportDefault gui=NONE cterm=NONE
+  hi jsFutureKeys gui=NONE cterm=NONE
+  hi markdownH1 gui=NONE cterm=NONE
+  hi markdownH2 gui=NONE cterm=NONE
+  hi markdownH3 gui=NONE cterm=NONE
+  hi markdownH4 gui=NONE cterm=NONE
+endif
+endverbatim
+Variant: gui 256
+# }}}
+#endif
+

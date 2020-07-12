@@ -4,19 +4,23 @@ Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'lifepillar/vim-gruvbox8'
+Plug 'lifepillar/vim-colortemplate'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
+Plug 'pangloss/vim-javascript'
 
 " Editor
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
-" Plug 'tpope/vim-obsession' " save session
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'mhinz/vim-startify'
 Plug '907th/vim-auto-save'
 Plug 'Yggdroot/indentLine'
@@ -24,8 +28,8 @@ Plug 'Yggdroot/indentLine'
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'unblevable/quick-scope'
-
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
