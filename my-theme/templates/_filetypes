@@ -122,54 +122,42 @@ cssColorProp                     aqua   none
 cssGeneratedContentProp          aqua   none
 # }}}
 #PanglossJS {{{
-jsImport                         cyan   none
-jsExport                         cyan   none
-jsFrom                           cyan    none
-jsThis                           red    none
-jsParen                          blue   none
-jsForAwait                       cyan   none
-jsOperator                       aqua   none
-jsSpreadOperator                 green  none
-jsSpreadExpression               blue   none
-jsClassKeyword                   red    none
-jsClassProperty                  green  none
-jsExtendsKeyword                 red    none
-jsExportDefault                  orange none bold
-jsTemplateBraces                 aqua   none
-jsGlobalNodeObjects              fg1    none
-jsGlobalObjects                  yellow    none
-jsFunction                       purple  none
-jsFuncParens                     purple none
-jsFuncBlock                      blue   none
-jsParens                         fg3    none
-jsNull                           purple none
-jsUndefined                      purple none
-jsClassDefinition                yellow none
-jsFunctionKey                    green  none
-jsBracket                        red    none
-jsObjectColon                    cyan   none
-jsObjectProp                     blue   none
-jsFuncBraces                     fg1    none
-jsVariableDef                    yellow none
-jsObjectValue                    blue   none
-jsDestructuringBlock             yellow none
-jsParenIfElse                    blue   none
-jsClassBlock                     blue   none
-jsFutureKeys                     orange none bold
-jsStorageClass                   purple none
-jsVariableDef                    lightred none 
-jsModuleKeyword                  blue   none
-jsObjectShorthandProp            blue   none
-jsxRegion                        blue   none
-jsNoise                          cyan   none
-jsObjectKey                       teal   none
-jsFuncCall                      skyblue  none 
-jsConditional                   cyan  none
-jsRepeat                        cyan  none
-jsDo                            cyan none 
-jsTry                           cyan none
-jsCatch                         cyan none
-jsFinally                       cyan none
+jsImport                         cyan       none
+jsExport                         cyan       none
+jsExportDefault                  cyan       none 
+jsFrom                           cyan       none
+jsConditional                    cyan       none
+jsRepeat                         cyan       none
+jsDo                             cyan       none 
+jsLabel                          cyan       none 
+jsStatement                      cyan       none
+jsTry                            cyan       none
+jsCatch                          cyan       none
+jsFinally                        cyan       none
+jsObjectColon                    cyan       none
+jsNoise                          cyan       none
+jsOperator                       aqua       none
+jsFuncCall                      skyblue     none 
+jsThis                           red        none
+jsSpreadOperator                 red        none
+jsDestructuringBlock             red        none
+jsClassKeyword                   purple     none
+jsExtendsKeyword                 purple     none
+jsFunction                       purple     none
+jsStorageClass                   purple     none
+jsComment                        indigo     none
+jsClassFuncName                  yellow     none
+jsGlobalNodeObjects              yellow     none
+jsGlobalObjects                  yellow     none
+jsFutureKeys                     orange     none bold
+jsFunctionKey                    green      none
+jsObjectKey                      teal       none
+jsModuleKeyword                  grey       none
+jsFuncBraces                     fg1        none
+jsParens                         fg3        none
+jsVariableDef                    lightred   none 
+jsNull                           desaturatedgrey  none
+jsUndefined                      desaturatedgrey  none
 # }}}
 # JSx{{{
 jsxTagName                       blue   none
@@ -210,7 +198,7 @@ typeScriptHtmlElemProperties     fg1    none
 typeScriptNull                   purple none
 typeScriptInterpolationDelimiter aqua   none
 # }}}
-# JSON {{{€ý,€ý,
+# JSON {{{
 jsonKeyword                      green  none
 jsonQuote                        green  none
 jsonBraces                       fg1    none

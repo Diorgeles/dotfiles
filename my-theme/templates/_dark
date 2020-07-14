@@ -12,6 +12,7 @@ Color: fg2             #a9b8e8    187
 Color: fg3             #828bb8    144
 Color: fg4             #444a73    137 Gray
 Color: grey            #c8d3f5    102 DarkGray
+Color: desaturatedgrey #7f85a3    102 DarkGray
 Color: red             #ff757f    203 Red
 Color: lightred        #ff98a4    203 Red
 Color: green           #c3e88d    142 Green
@@ -20,6 +21,7 @@ Color: yellow          #ffc777    214 Yellow
 Color: blue            #82aaff    109 Blue
 Color: skyblue         #65bcff    109 Blue
 Color: purple          #c099ff    175 Magenta
+Color: indigo          #7a88cf    175 Magenta
 Color: aqua            #b4f9f8    107 Cyan
 Color: cyan            #86e1fc    108 Cyan
 Color: orange          #ff966c    208 Magenta

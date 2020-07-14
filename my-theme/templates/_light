@@ -9,12 +9,14 @@ Color: fg2               rgb( 80,  56,  54)    237
 Color: fg3               rgb(102,  92,  84)     59
 Color: fg4               rgb(124, 111, 100)    243 Black
 Color: grey              rgb(146, 131, 116)    102 DarkGray
+Color: desaturatedgrey #7f85a3    102 DarkGray
 Color: red               rgb(157,   0,   6)    124 Red
 Color: lightred       #ff98a4    203 Red
 Color: green             rgb(121, 116,  14)    100 Green
 Color: yellow            rgb(181, 118,  20)    172 Yellow
 Color: blue              rgb(  7, 102, 120)    23  Blue
 Color: purple            rgb(143,  63, 113)    126 Magenta
+Color: indigo          #7a88cf    175 Magenta
 Color: aqua              rgb( 66, 123,  88)    29  Cyan
 Color: cyan              #86e1fc    108 Cyan
 Color: orange            rgb(175,  58,   3)    124 Magenta
