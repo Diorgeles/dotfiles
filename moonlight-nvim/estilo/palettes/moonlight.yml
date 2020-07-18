@@ -1,0 +1,38 @@
+red1: "#ff98a4"
+red2: "#ff757f"
+red3: "#ff5370"
+
+green1: "#c3e88d"
+green2: "#4fd6be"
+
+pink1: "#fca7ea"
+pink2: "#c099ff"
+pink3: "#7a88cf"
+
+blue1: "#b4f9f8"
+blue2: "#86e1fc"
+blue3: "#65bcff"
+blue4: "#82aaff"
+blue5: "#3e68d7"
+
+yellow1: "#ffc777"
+yellow2: "#ff966c"
+yellow3: "#fc7b7b"
+
+highlighted: "#ffffff"
+text: "#eeeeee"
+pearl: "#dadada"
+
+gandalf: "#c8d3f5"
+grey1: "#b4c2f0"
+grey2: "#a9b8e8"
+grey3: "#828bb8"
+grey4: "#7f85a3"
+grey5: "#444a73"
+
+shadow: "#2f334d"
+bg: "#222436"
+
+dark: "#1e2030"
+darker: "#191a2a"
+darkest: "#131421"
