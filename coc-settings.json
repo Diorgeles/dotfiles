@@ -1,4 +1,9 @@
 {
+  "suggest.completionItemKindLabels": {
+    "text": "t",
+    "method": "m",
+    "function": ""
+  },
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
@@ -18,5 +23,11 @@
   "explorer.keyMappings": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-  }
+  },
+  "diagnostic.errorSign": " ",
+  "diagnostic.warningSign": " ",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": " ",
+  "diagnostic.virtualText": true,
+  "coc.preferences.hoverTarget": "float"
 }

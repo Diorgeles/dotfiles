@@ -13,12 +13,3 @@ Background: dark
 Color: bg0 #222436    234 DarkGray
 Include: _dark
 
-Background: light
-Color: bg0 rgb(249, 245, 215)   229 White
-Color: bg1 rgb(235, 219, 178) 187 Grey
-Color: bg2 rgb(213, 196, 161) 187
-Include: _light
-
-Background: any
-Include: _bw
-

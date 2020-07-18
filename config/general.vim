@@ -1,4 +1,5 @@
 " GENERAL CONFIG
+set spelllang=pt_BR
 set mouse=a
 set hidden
 set ttyfast
@@ -36,9 +37,9 @@ syntax on
 " SESSION CONFIG
 let g:startify_lists = [
           \ { 'type': 'sessions',  'header': ['   Sessions']       },
+          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
           \ { 'type': 'files',     'header': ['   Files']            },
           \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
-          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
           \ ]
 let g:startify_session_dir = '~/.config/nvim/session'
 let g:startify_change_to_vcs_root = 1
@@ -48,6 +49,7 @@ let g:startify_fortune_use_unicode = 1
 let g:startify_enable_special = 0
 let g:startify_bookmarks = [
             \ { 'c': '~/.config/nvim/config/themes.vim' },
+            \ { 'm': '~/Documents/projects/dotfiles/my-theme/templates/_filetypes' },
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
             \ ]
@@ -58,5 +60,5 @@ function! StartifyEntryFormat()
 endfunction
 
 
-autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+" autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
