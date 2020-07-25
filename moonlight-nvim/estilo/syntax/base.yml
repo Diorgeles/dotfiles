@@ -51,21 +51,21 @@ Boolean: 'yellow2 -' # Constant
 Number: 'yellow2 -' # Constant
 Float: 'yellow2 -' # Constant
 Identifier: 'blue4 -'
-Function: 'blue4 -' # Identifier
+Function: 'blue4' # Identifier
 Statement: 'blue1 -'
 Conditional: 'green1 -' # Statement
-Repeat: '' # Statement
+Repeat: 'blue2' # Statement
 Label: '' # Statement
 Operator: 'red1 -' # Statement
 Keyword: '' # Statement
 Exception: 'red1 -' # Statement
 PreProc: 'green1 -'
-Include: '' # PreProc
+Include: 'blue2' # PreProc
 Define: '' # PreProc
 Macro: '' # PreProc
 PreCondit: '' # PreProc
-Type: 'blue2 - '
-StorageClass: '' # Type
+Type: 'yellow1 - '
+StorageClass: 'pink2' # Type
 Structure: '' # Type
 Typedef: '' # Type
 Special: 'blue2 -'

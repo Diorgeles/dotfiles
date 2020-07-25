@@ -52,41 +52,26 @@ badd +119 sigep-node/lib/class/Services.js
 badd +7 sigep-node/lib/services/FechaPlp.js
 badd +22 sigep/src/services/preListaDePostagem/plp.ts
 badd +1 sigep/src/services/preListaDePostagem/types.ts
-badd +40 projects/mbc/mbc_backend/src/sigep-clients/sigep-clients.service.ts
+badd +50 projects/mbc/mbc_backend/src/sigep-clients/sigep-clients.service.ts
 badd +4 projects/mbc/mbc_backend/src/sigep-clients/sigep-clients.controller.ts
 badd +4 projects/mbc/mbc_backend/nodemon.json
-badd +0 projects/mbc/mbc_frontend/src/services/apiService.ts
+badd +1 projects/mbc/mbc_frontend/src/services/apiService.ts
+badd +1 \[coc-explorer]-2
 argglobal
 %argdel
 edit projects/mbc/mbc_frontend/src/services/apiService.ts
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
-wincmd _ | wincmd |
-vsplit
-2wincmd h
-wincmd w
+1wincmd h
 wincmd w
 wincmd t
 set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 40 + 127) / 255)
-exe 'vert 2resize ' . ((&columns * 106 + 127) / 255)
-exe 'vert 3resize ' . ((&columns * 107 + 127) / 255)
-argglobal
-enew
-file \[coc-explorer]-2
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal nofen
-wincmd w
+exe 'vert 1resize ' . ((&columns * 141 + 142) / 284)
+exe 'vert 2resize ' . ((&columns * 142 + 142) / 284)
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -97,12 +82,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 24) / 48)
+let s:l = 15 - ((14 * winheight(0) + 26) / 52)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+15
+normal! 018|
 wincmd w
 argglobal
 if bufexists("projects/mbc/mbc_backend/src/sigep-clients/sigep-clients.service.ts") | buffer projects/mbc/mbc_backend/src/sigep-clients/sigep-clients.service.ts | else | edit projects/mbc/mbc_backend/src/sigep-clients/sigep-clients.service.ts | endif
@@ -115,17 +100,16 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 40 - ((8 * winheight(0) + 24) / 48)
+let s:l = 55 - ((25 * winheight(0) + 26) / 52)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-40
-normal! 0
+55
+normal! 03|
 wincmd w
 2wincmd w
-exe 'vert 1resize ' . ((&columns * 40 + 127) / 255)
-exe 'vert 2resize ' . ((&columns * 106 + 127) / 255)
-exe 'vert 3resize ' . ((&columns * 107 + 127) / 255)
+exe 'vert 1resize ' . ((&columns * 141 + 142) / 284)
+exe 'vert 2resize ' . ((&columns * 142 + 142) / 284)
 if exists(':tcd') == 2 | tcd ~/Documents/sthima | endif
 tabnext 1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
