@@ -1,0 +1,95 @@
+let SessionLoad = 1
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+cd ~/
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +67 Documents/sthima/urbe/urbe-app/src/components/buttons/FloatingButton.js
+badd +1 \[coc-explorer]-1
+badd +2 Documents/sthima/genetica/client/docker-compose.yml
+badd +3 Documents/sthima/genetica/client/Dockerfile
+badd +3 Documents/sthima/genetica/client/package-lock.json
+badd +1 Documents/sthima/genetica/client/yarn.lock
+badd +1 Documents/sthima/genetica/client/tsconfig.json
+badd +3 Documents/sthima/genetica/server/src/export/pdf/SeqGeneBTD.export.ts
+badd +63 Documents/sthima/genetica/server/src/export/pdf/SeqGeneCYP21A2.export.ts
+badd +11 Documents/sthima/genetica/server/migrations/1567615241233-CreateAdminUser.ts
+badd +135 Documents/sthima/genetica/server/src/export/pdf/helpers/tableSeqBTD.ts
+badd +1 Documents/sthima/genetica/server/src/export/pdf/helpers/tableSeqGeneCYP21A2.ts
+badd +1 Documents/sthima/genetica/server/src/export/pdf/helpers/tableSnapCFTR.ts
+badd +1 Documents/sthima/genetica/server/src/export/pdf/helpers/tableSnapCYP21A2.ts
+badd +4 Documents/sthima/genetica/server/src/export/pdf/helpers/tableMLPAGeneCYP21A2.ts
+badd +22 Documents/sthima/genetica/server/src/export/pdf/reportPDF.ts
+badd +11 Documents/sthima/mbc/mbc_backend/.env.development
+badd +6 Documents/sthima/mbc/mbc_backend/nodemon.json
+badd +1 Documents/sthima/mbc/mbc_backend/src/sigep-labels/sigep-labels.service.ts
+badd +35 Documents/sthima/mbc/mbc_backend/src/sigep-clients/sigep-clients.service.ts
+badd +1 \[coc-explorer]-6
+badd +1 Documents/projects/dotfiles/moonlight-nvim/estilo/palettes/moonlight.yml
+badd +7 Documents/sthima/genetica/client/package.json
+badd +0 Documents/sthima/genetica/.gitignore
+argglobal
+%argdel
+edit Documents/sthima/genetica/.gitignore
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+wincmd t
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe 'vert 1resize ' . ((&columns * 40 + 142) / 284)
+exe 'vert 2resize ' . ((&columns * 243 + 142) / 284)
+argglobal
+enew
+file \[coc-explorer]-1
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+wincmd w
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 25 - ((24 * winheight(0) + 26) / 52)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+25
+normal! 0
+wincmd w
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 40 + 142) / 284)
+exe 'vert 2resize ' . ((&columns * 243 + 142) / 284)
+if exists(':tcd') == 2 | tcd ~/Documents/sthima | endif
+tabnext 1
+if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20 winminheight=1 winminwidth=1 shortmess=filnxtToOFI
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

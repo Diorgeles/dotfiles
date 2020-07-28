@@ -1,0 +1,99 @@
+let SessionLoad = 1
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+cd ~/
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +1 Documents/sthima/urbe/urbe-app/src/components/buttons/FloatingButton.js
+badd +1 \[coc-explorer]-4
+badd +5 Documents/sthima/urbe/urbe-app/src/components/buttons/IconButton.js
+badd +22 Documents/sthima/urbe/urbe-app/src/components/buttons/LinkButton.js
+badd +9 Documents/sthima/urbe/urbe-app/src/components/buttons/NextButton.js
+badd +6 Documents/sthima/urbe/urbe-app/src/components/buttons/StandardButton.js
+badd +1 \[coc-explorer]-5
+badd +7 Documents/sthima/urbe/urbe-app/react-native.config.js
+badd +3 Documents/sthima/urbe/urbe-app/babel.config.js
+badd +1 Documents/sthima/urbe/app-back/src/users/dtos/change-pass-user.dto.ts
+badd +18 Documents/sthima/urbe/app-back/src/users/dtos/create-user.dto.ts
+badd +1 Documents/sthima/urbe/app-back/docker-compose.yaml
+badd +1 Documents/sthima/urbe/app-back/nodemon.json
+badd +55 Documents/sthima/urbe/app-back/src/auth/auth.service.ts
+badd +1 Documents/sthima/urbe/app-back/src/banks/banks.entity.ts
+badd +2 Documents/sthima/urbe/app-back/src/banks/banks.repository.ts
+badd +1 Documents/sthima/urbe/app-back/src/banks/banks.service.ts
+badd +9 Documents/sthima/urbe/app-back/src/bmp/bmp.service.ts
+badd +63 Documents/sthima/urbe/app-back/src/app.module.ts
+badd +198 Documents/sthima/urbe/app-back/src/users/users.controller.ts
+badd +1 Documents/sthima/urbe/app-back/src/users/users.repository.ts
+badd +139 Documents/sthima/urbe/app-back/src/users/users.service.ts
+badd +1 Documents/sthima/urbe/db.sqlite3
+badd +252 Documents/sthima/urbe/models.py
+badd +52 Documents/sthima/urbe/app-back/src/projects/interfaces/project.interface.ts
+badd +17 Documents/sthima/urbe/database-migration/prisma/schema.prisma
+badd +1 Documents/sthima/urbe/app-back/src/banks/banks.controller.ts
+badd +1 Documents/sthima/urbe/urbe-app/app.json
+badd +1 \[coc-explorer]-1
+argglobal
+%argdel
+edit Documents/sthima/urbe/database-migration/prisma/schema.prisma
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+wincmd t
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe 'vert 1resize ' . ((&columns * 40 + 142) / 284)
+exe 'vert 2resize ' . ((&columns * 243 + 142) / 284)
+argglobal
+enew
+file \[coc-explorer]-4
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+wincmd w
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 7 - ((6 * winheight(0) + 26) / 52)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+7
+normal! 032|
+wincmd w
+exe 'vert 1resize ' . ((&columns * 40 + 142) / 284)
+exe 'vert 2resize ' . ((&columns * 243 + 142) / 284)
+if exists(':tcd') == 2 | tcd ~/Documents/sthima | endif
+tabnext 1
+if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20 winminheight=1 winminwidth=1 shortmess=filnxtToOFI
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

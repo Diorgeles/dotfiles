@@ -1,0 +1,104 @@
+let SessionLoad = 1
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+cd ~/
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +1 Documents/sthima/mbc/mbc_backend/src/invoices/invoices.service.ts
+badd +12 Documents/sthima/mbc/mbc_backend/.env.development
+badd +0 Documents/sthima/mbc/mbc_backend/.git/index
+badd +12 Documents/sthima/mbc/mbc_backend/src/sigep-clients/sigep-clients.service.ts
+badd +30 Documents/sthima/mbc/mbc_backend/src/sigep-labels/sigep-labels.service.ts
+argglobal
+%argdel
+edit Documents/sthima/mbc/mbc_backend/src/sigep-clients/sigep-clients.service.ts
+set splitbelow splitright
+wincmd _ | wincmd |
+split
+1wincmd k
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+wincmd w
+wincmd t
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe '1resize ' . ((&lines * 25 + 27) / 55)
+exe 'vert 1resize ' . ((&columns * 40 + 142) / 284)
+exe '2resize ' . ((&lines * 25 + 27) / 55)
+exe 'vert 2resize ' . ((&columns * 243 + 142) / 284)
+exe '3resize ' . ((&lines * 26 + 27) / 55)
+argglobal
+enew
+file \[coc-explorer]-1
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+lcd ~/Documents/sthima/mbc/mbc_backend
+wincmd w
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+let s:l = 12 - ((11 * winheight(0) + 12) / 25)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+12
+normal! 0
+lcd ~/Documents/sthima/mbc/mbc_backend
+wincmd w
+argglobal
+if bufexists("~/Documents/sthima/mbc/mbc_backend/.git/index") | buffer ~/Documents/sthima/mbc/mbc_backend/.git/index | else | edit ~/Documents/sthima/mbc/mbc_backend/.git/index | endif
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=1
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+let s:l = 5 - ((4 * winheight(0) + 13) / 26)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+5
+normal! 0
+lcd ~/Documents/sthima/mbc/mbc_backend
+wincmd w
+3wincmd w
+exe '1resize ' . ((&lines * 25 + 27) / 55)
+exe 'vert 1resize ' . ((&columns * 40 + 142) / 284)
+exe '2resize ' . ((&lines * 25 + 27) / 55)
+exe 'vert 2resize ' . ((&columns * 243 + 142) / 284)
+exe '3resize ' . ((&lines * 26 + 27) / 55)
+tabnext 1
+if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20 winminheight=1 winminwidth=1 shortmess=filnxtToOFI
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

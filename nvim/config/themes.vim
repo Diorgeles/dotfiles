@@ -4,23 +4,23 @@ set background=dark
 " let g:gruvbox_contrast_dark='hard'
 " let g:airline_theme='gruvbox'
 
+" colorscheme OceanicNext
+" let g:airline_theme='oceanicnext'
+
 " colorscheme moonlight
 colorscheme gruvbox8_hard
 let g:airline_theme='gruvbox'
 let g:gruvbox8_filetype_hi_groups = 1
 
-
-" colorscheme mytheme
-" let g:mytheme_plugin_hi_groups = 1
-" let g:mytheme_filetype_hi_groups = 1
-
 " colorscheme night-owl
 " let g:airline_theme='nightowl'
 
 " let g:gruvbox_italic=0
-" colorscheme nord
 " colorscheme onedark
 " let g:airline_theme='onedark'
+
+" colorscheme nord
+" let g:airline_theme='nord'
 
 " colorscheme onedark
 " let g:airline_theme='onedark'
@@ -42,7 +42,7 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " Tabline                                                                                          
 
-" let g:airline_powerline_fonts = 1                                                                                                         
+let g:airline_powerline_fonts = 1                                                                                                         
 let g:airline#extensions#tabline#enabled = 1           " enable airline tabline                                                           
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#buffers_label = ''    " can put text here like TABS to denote tabs (I clear it so nothing is shown)      
@@ -59,8 +59,3 @@ let airline#extensions#coc#warning_symbol = 'W:'
 " let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
 let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
 
-" let g:rainbow#max_level = 16
-" let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
-
-" autocmd FileType * RainbowParentheses
-" let g:polyglot_disabled = ['jsx']

@@ -10,7 +10,7 @@ set showcmd
 set updatetime=300
 set autoread                            " Automatically reread changed files without asking me anything
 " set cmdheight=2                       " More space for displaying messages
-set clipboard=unnamedplus 
+set clipboard+=unnamedplus 
 set noswapfile
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
@@ -34,31 +34,30 @@ set smartindent
 set ignorecase
 syntax on
 
+
 " SESSION CONFIG
 let g:startify_lists = [
-          \ { 'type': 'sessions',  'header': ['   Sessions']       },
-          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-          \ { 'type': 'files',     'header': ['   Files']            },
-          \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
-          \ ]
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+      \ { 'type': 'files',     'header': ['   Files']            },
+      \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
+      \ ]
+let g:startify_bookmarks = [
+      \ { 'c': '~/.config/nvim/config/themes.vim' },
+      \ { 'm': '~/Documents/projects/dotfiles/' },
+      \ { 'i': '~/.config/nvim/init.vim' },
+      \ { 'z': '~/.zshrc' },
+      \ ]
 let g:startify_session_dir = '~/.config/nvim/session'
 let g:startify_change_to_vcs_root = 1
 let g:startify_session_persistence = 1
 let g:startify_session_delete_buffers = 1
 let g:startify_fortune_use_unicode = 1
 let g:startify_enable_special = 0
-let g:startify_bookmarks = [
-            \ { 'c': '~/.config/nvim/config/themes.vim' },
-            \ { 'm': '~/Documents/projects/dotfiles/my-theme/templates/_filetypes' },
-            \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'z': '~/.zshrc' },
-            \ ]
 let g:webdevicons_enable_startify = 1
 
 function! StartifyEntryFormat()
   return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
 endfunction
 
-
-" autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
+let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'

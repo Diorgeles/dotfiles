@@ -8,6 +8,8 @@ Plug 'KeitaNakamura/neodark.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'lifepillar/vim-colortemplate'
+Plug 'mhartington/oceanic-next'
+Plug 'haishanh/night-owl.vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -23,6 +25,8 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'mhinz/vim-startify'
 Plug '907th/vim-auto-save'
 Plug 'Yggdroot/indentLine'
+Plug 'edkolev/tmuxline.vim'
+Plug 'pantharshit00/vim-prisma'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
