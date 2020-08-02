@@ -1,6 +1,7 @@
 plugged
 node_modules
 session
+coc/extensions/coc-yank-data
 snippets-mru
 mru
 memos.json
@@ -8,3 +9,4 @@ history.json
 commands
 db.json
 colors
+explorer-actions
