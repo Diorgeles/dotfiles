@@ -26,6 +26,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'mhinz/vim-startify'
 Plug 'liuchengxu/vim-which-key'
 Plug 'pantharshit00/vim-prisma'
+Plug 'voldikss/vim-floaterm'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -41,14 +42,16 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 call plug#end()
 
-" =========================== Plugins ===========================
-source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/plug-config/airline.vim
-source $HOME/.config/nvim/plug-config/startify.vim
-source $HOME/.config/nvim/plug-config/indentline.vim
-
 " Automatically install missing plugins on startup
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
   \| endif
+
+" =========================== Plugins ===========================
+source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/airline.vim
+source $HOME/.config/nvim/plug-config/startify.vim
+source $HOME/.config/nvim/plug-config/indentline.vim
+source $HOME/.config/nvim/plug-config/floaterm.vim
+

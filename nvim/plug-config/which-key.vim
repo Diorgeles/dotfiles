@@ -33,6 +33,7 @@ let g:which_key_map['e'] = [ ':e $MYVIMRC'                , 'open init' ]
 let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
 let g:which_key_map['s'] = [ ':SSave'                     , 'save session' ]
 let g:which_key_map['r'] = [ ':source $MYVIMRC'           , 'reload init.vim']
+let g:which_key_map['i'] = [ ':PlugInstall'               , 'Plugin install']
 
 " Group mappings
 
@@ -46,5 +47,17 @@ let g:which_key_map.g = {
       \ 'r' : [':GRemove'                          , 'remove'],
       \ }
 
+let g:which_key_map.t = {
+      \ 'name' : '+terminal' ,
+      \ ';' : [':FloatermNew --wintype=popup --height=6'        , 'terminal'],
+      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
+      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
+      \ 'n' : [':FloatermNew node'                              , 'node'],
+      \ 'p' : [':FloatermNew python'                            , 'python'],
+      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
+      \ 't' : [':FloatermToggle'                                , 'toggle'],
+      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
+      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ }
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")
