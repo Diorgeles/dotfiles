@@ -1,7 +1,4 @@
-"==================================================================="
-"Função para melhorar a busca por definições"
-
-
+" =========================== Intellisense ===========================
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
@@ -71,5 +68,8 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 "==================================================================="
 

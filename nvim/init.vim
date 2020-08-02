@@ -1,6 +1,4 @@
-source $HOME/.config/nvim/config/plugins.vim
-source $HOME/.config/nvim/config/themes.vim
-source $HOME/.config/nvim/config/general.vim
-source $HOME/.config/nvim/config/keymaps.vim
-source $HOME/.config/nvim/config/intellisense.vim
-
+" =========================== Plugins & Configs ===========================
+source $HOME/.config/nvim/plug-config/index.vim
+source $HOME/.config/nvim/config/index.vim
+source $HOME/.config/nvim/plug-config/which-key.vim
