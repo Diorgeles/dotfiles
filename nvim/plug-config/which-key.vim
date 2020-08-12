@@ -44,7 +44,7 @@ let g:which_key_map.g = {
       \ 'c' : [':Gcommit'                          , 'commit'],
       \ 'd' : [':Gvdiffsplit'                      , 'diff split'],
       \ 's' : [':Git'                              , 'log'],
-      \ 'r' : [':GRemove'                          , 'remove'],
+      \ 'r' : [':GRead'                            , 'discard'],
       \ }
 
 let g:which_key_map.t = {

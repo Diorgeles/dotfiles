@@ -20,7 +20,8 @@ Plug 'ryanoasis/vim-devicons'
 " Editor
 Plug 'yggdroot/indentline'
 Plug 'jiangmiao/auto-pairs'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi'
+Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'mhinz/vim-startify'
@@ -50,6 +51,7 @@ autocmd VimEnter *
 
 " =========================== Plugins ===========================
 source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/coc-explorer.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/indentline.vim

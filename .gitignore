@@ -10,3 +10,5 @@ commands
 db.json
 colors
 explorer-actions
+
+coc/extensions/coc-yank-data/yank
