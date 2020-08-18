@@ -17,11 +17,12 @@ nnoremap <leader>gc :Gcommit<CR>
 " General 
 nnoremap <c-s> :w!<cr>
 nnoremap <c-q> :q!<cr>
+nnoremap <c-b> :Bdelete hidden<cr>
 nnoremap <c-h> <c-w><c-h>
 nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
-nnoremap <silent>nn :nohlsearch<Bar>:echo<CR>
+nnoremap <silent>nm :nohlsearch<Bar>:echo<CR>
 
 " Move window
 map <A-S-Right> <C-W><

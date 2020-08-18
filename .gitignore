@@ -2,6 +2,7 @@ plugged
 node_modules
 session
 coc/extensions/coc-yank-data
+coc/extensions/coc-python-data
 snippets-mru
 mru
 memos.json

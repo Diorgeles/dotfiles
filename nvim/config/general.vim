@@ -1,13 +1,18 @@
 " =========================== Tema ===========================
 set termguicolors
 set background=dark
-let g:gruvbox_contrast_dark="hard"
-let g:gruvbox_undercurl=0  
-let g:gruvbox_underline=0
-colorscheme gruvbox
+" let g:gruvbox_contrast_dark="hard"
+" let g:gruvbox_undercurl=0  
+" let g:gruvbox_underline=0
+" let g:airline_theme='gruvbox'
+" colorscheme gruvbox
  
-" colorscheme forest-night
-" let g:airline_theme='forest_night'
+colorscheme forest-night
+let g:airline_theme='forest_night'
+
+" colorscheme onedark
+" let g:airline_theme='onedark'
+
 " =========================== General ===========================
 set mouse=a
 set hidden
@@ -39,4 +44,7 @@ set autoindent
 set smartindent
 set ignorecase
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
+set foldmethod=syntax
+set foldlevel=99
 let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
+let g:virtualenv_directory='~/Documents/virtualenvs' 

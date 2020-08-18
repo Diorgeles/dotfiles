@@ -11,6 +11,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/forest-night'
+Plug 'joshdick/onedark.vim'
+Plug 'jmcantrell/vim-virtualenv'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -28,6 +30,7 @@ Plug 'mhinz/vim-startify'
 Plug 'liuchengxu/vim-which-key'
 Plug 'pantharshit00/vim-prisma'
 Plug 'voldikss/vim-floaterm'
+Plug 'Asheq/close-buffers.vim'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -37,6 +40,7 @@ Plug 'unblevable/quick-scope'
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
+Plug 'dense-analysis/ale'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -51,7 +55,7 @@ autocmd VimEnter *
 
 " =========================== Plugins ===========================
 source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/plug-config/coc-explorer.vim
+source $HOME/.config/nvim/plug-config/ale.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/indentline.vim

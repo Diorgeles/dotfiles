@@ -1,10 +1,16 @@
 {
+  "suggest.enablePreview": true,
+  "python.linting.flake8Enabled": true,
+  "python.jediEnabled": false,
   "suggest.maxCompleteItemCount": 20,
   "diagnostic.errorSign": " ",
   "diagnostic.warningSign": " ",
   "diagnostic.infoSign": "",
   "diagnostic.hintSign": " ",
   "diagnostic.refreshOnInsertMode": true,
+  "diagnostic.enableMessage": "never",
+  "diagnostic.displayByAle": true,
+  "diagnostic.virtualText": true,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.keyMappings": {

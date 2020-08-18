@@ -5,8 +5,6 @@ let g:startify_lists = [
       \ { 'type': 'files',     'header': ['   Files']            },
       \ ]
 let g:startify_bookmarks = [
-      \ { 'c': '~/.config/nvim/config/themes.vim' },
-      \ { 'i': '~/.config/nvim/init.vim' },
       \ { 'z': '~/.zshrc' },
       \ ]
 let g:startify_session_dir = '~/.config/nvim/session'
