@@ -1,7 +1,8 @@
 {
   "suggest.enablePreview": true,
-  "python.linting.flake8Enabled": true,
   "python.jediEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "yapf",
   "suggest.maxCompleteItemCount": 20,
   "diagnostic.errorSign": " ",
   "diagnostic.warningSign": " ",

@@ -41,6 +41,7 @@ Plug 'unblevable/quick-scope'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
+Plug 'mgedmin/python-imports.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
