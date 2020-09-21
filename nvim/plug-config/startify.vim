@@ -15,6 +15,7 @@ let g:startify_session_delete_buffers = 1
 let g:startify_fortune_use_unicode = 1
 let g:startify_enable_special = 0
 let g:webdevicons_enable_startify = 1
+let g:startify_session_sort = 1
 
 function! StartifyEntryFormat()
   return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'

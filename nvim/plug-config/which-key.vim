@@ -29,17 +29,33 @@ let g:which_key_map['='] = [ '<C-w>='                     , 'balance windows' ]
 let g:which_key_map['|'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map[','] = [ ':SClose'                    , 'start screen' ]
 let g:which_key_map['_'] = [ '<C-W>s'                     , 'split below']
-let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'open init' ]
+let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'coc explorer' ]
 let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
 let g:which_key_map['s'] = [ ':SSave'                     , 'save session' ]
+let g:which_key_map['d'] = [ ':SDelete'                   , 'delete session' ]
 let g:which_key_map['r'] = [ ':source $MYVIMRC'           , 'reload init.vim']
-let g:which_key_map['i'] = [ ':PlugInstall'               , 'Plugin install']
 
-" Group mappings
+let g:which_key_map.c = {
+      \ 'name' : '+Coc Nvim' ,
+      \ 'u' : [':CocUpdate'                           , 'coc update'],
+      \ 'm' : [':CocList marketplace'                 , 'coc marketplace'],
+      \ }
 
-" g is for git
+let g:which_key_map.n = {
+      \ 'name' : '+Navigation' ,
+      \ 'n' : [':tabnext'                           , 'tab Next'],
+      \ 'p' : [':tabprevious'                       , 'tab Previous'],
+      \ }
+
+let g:which_key_map.p = {
+      \ 'name' : '+Plug' ,
+      \ 'i' : [':PlugInstall'                      , 'plug install'],
+      \ 'c' : [':PlugClean'                        , 'plug clean'],
+      \ 'u' : [':PlugUpdate'                       , 'plug update'],
+      \ }
+
 let g:which_key_map.g = {
-      \ 'name' : '+git' ,
+      \ 'name' : '+Git' ,
       \ 'b' : [':Gblame'                           , 'blame'],
       \ 'c' : [':Gcommit'                          , 'commit'],
       \ 'd' : [':Gvdiffsplit'                      , 'diff split'],
@@ -48,8 +64,7 @@ let g:which_key_map.g = {
       \ }
 
 let g:which_key_map.t = {
-      \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype=popup --height=6'        , 'terminal'],
+      \ 'name' : '+Terminal' ,
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'n' : [':FloatermNew node'                              , 'node'],

@@ -13,3 +13,9 @@ colors
 explorer-actions
 
 coc/extensions/coc-yank-data/yank
+
+coc/extensions/package.json
+nvim/autoload/plug.vim
+coc/extensions/coc-tabnine-data/binaries/*
+coc/extensions/yarn.lock
+nvim/autoload/plug.vim.old

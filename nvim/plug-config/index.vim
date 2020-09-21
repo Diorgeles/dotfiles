@@ -12,7 +12,9 @@ Plug 'rakr/vim-one'
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/forest-night'
 Plug 'joshdick/onedark.vim'
-Plug 'jmcantrell/vim-virtualenv'
+Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
+Plug 'lifepillar/vim-solarized8'
+Plug 'lifepillar/vim-gruvbox8'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -20,7 +22,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
 
 " Editor
-Plug 'yggdroot/indentline'
+Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mg979/vim-visual-multi'
 Plug 'airblade/vim-rooter'
@@ -31,6 +33,13 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'pantharshit00/vim-prisma'
 Plug 'voldikss/vim-floaterm'
 Plug 'Asheq/close-buffers.vim'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'sheerun/vim-polyglot'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -39,13 +48,14 @@ Plug 'unblevable/quick-scope'
 
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'mgedmin/python-imports.vim'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
+
 call plug#end()
 
 " Automatically install missing plugins on startup

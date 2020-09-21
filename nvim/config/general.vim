@@ -1,17 +1,20 @@
 " =========================== Tema ===========================
 set termguicolors
-set background=dark
-" let g:gruvbox_contrast_dark="hard"
-" let g:gruvbox_undercurl=0  
+
+" colorscheme gruvbox
+" let g:gruvbox_contrast="hard"
+" let g:gruvbox_undercurl=1
 " let g:gruvbox_underline=0
 " let g:airline_theme='gruvbox'
-" colorscheme gruvbox
- 
+
 colorscheme forest-night
 let g:airline_theme='forest_night'
 
 " colorscheme onedark
 " let g:airline_theme='onedark'
+
+" colorscheme nord
+" let g:airline_theme='nord'
 
 " =========================== General ===========================
 set mouse=a
