@@ -19,3 +19,5 @@ nvim/autoload/plug.vim
 coc/extensions/coc-tabnine-data/binaries/*
 coc/extensions/yarn.lock
 nvim/autoload/plug.vim.old
+
+coc/extensions/coc-java-data/*

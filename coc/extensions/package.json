@@ -5,6 +5,7 @@
     "coc-explorer": ">=0.8.2",
     "coc-git": ">=2.0.1",
     "coc-highlight": ">=1.2.6",
+    "coc-java": ">=1.4.12",
     "coc-json": ">=1.2.6",
     "coc-marketplace": ">=1.7.0",
     "coc-pairs": ">=1.2.21",
