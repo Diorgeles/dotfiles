@@ -21,6 +21,14 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
 
+" Syntax
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+" Plug 'sheerun/vim-polyglot'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
 " Editor
 Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
@@ -30,16 +38,11 @@ Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'mhinz/vim-startify'
 Plug 'liuchengxu/vim-which-key'
-Plug 'pantharshit00/vim-prisma'
 Plug 'voldikss/vim-floaterm'
 Plug 'Asheq/close-buffers.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'jmcantrell/vim-virtualenv'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'sheerun/vim-polyglot'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -50,7 +53,6 @@ Plug 'unblevable/quick-scope'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'mgedmin/python-imports.vim'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -65,7 +67,7 @@ autocmd VimEnter *
   \| endif
 
 " =========================== Plugins ===========================
-source $HOME/.config/nvim/plug-config/coc.vim
+" source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/ale.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/startify.vim

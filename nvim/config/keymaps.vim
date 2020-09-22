@@ -1,8 +1,5 @@
 let mapleader="\<space>"
 
-" Open Files
-nnoremap <leader>ek :vsplit ~/.config/nvim/config/keymaps.vim<cr>
-
 " Open extensions
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :CocSearch<space>
@@ -14,7 +11,7 @@ nnoremap <leader>gs :Git<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gc :Gcommit<CR>
 
-" General 
+" General
 nnoremap <c-s> :w!<cr>
 nnoremap <c-q> :q!<cr>
 nnoremap <c-b> :Bdelete hidden<cr>
