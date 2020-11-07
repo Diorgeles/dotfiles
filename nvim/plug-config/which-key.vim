@@ -25,54 +25,67 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map['='] = [ '<C-w>='                     , 'balance windows' ]
-let g:which_key_map['|'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map[','] = [ ':SClose'                    , 'start screen' ]
-let g:which_key_map['_'] = [ '<C-W>s'                     , 'split below']
-let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'coc explorer' ]
-let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
-let g:which_key_map['s'] = [ ':SSave'                     , 'save session' ]
-let g:which_key_map['d'] = [ ':SDelete'                   , 'delete session' ]
-let g:which_key_map['r'] = [ ':source $MYVIMRC'           , 'reload init.vim']
+let g:which_key_map['='] = [ '<C-w>='               , 'balance windows' ]
+let g:which_key_map['|'] = [ '<C-W>v'               , 'split right']
+let g:which_key_map[','] = [ ':SClose'              , 'start screen' ]
+let g:which_key_map['_'] = [ '<C-W>s'               , 'split below']
+let g:which_key_map['e'] = [ ':CocCommand explorer' , 'coc explorer' ]
+let g:which_key_map['q'] = [ 'q'                    , 'quit' ]
+let g:which_key_map['s'] = [ ':SSave'               , 'save session' ]
+let g:which_key_map['d'] = [ ':SDelete'             , 'delete session' ]
+let g:which_key_map['r'] = [ ':source $MYVIMRC'     , 'reload init.vim']
 
 let g:which_key_map.c = {
       \ 'name' : '+Coc Nvim' ,
-      \ 'u' : [':CocUpdate'                           , 'coc update'],
-      \ 'm' : [':CocList marketplace'                 , 'coc marketplace'],
+      \ 'u' : [':CocUpdate'           , 'coc update'],
+      \ 'm' : [':CocList marketplace' , 'coc marketplace'],
       \ }
 
 let g:which_key_map.n = {
       \ 'name' : '+Navigation' ,
-      \ 'n' : [':tabnext'                           , 'tab Next'],
-      \ 'p' : [':tabprevious'                       , 'tab Previous'],
+      \ 'n' : [':tabnext'      , 'tab Next'],
+      \ 'p' : [':tabprevious'  , 'tab Previous'],
       \ }
 
 let g:which_key_map.p = {
       \ 'name' : '+Plug' ,
-      \ 'i' : [':PlugInstall'                      , 'plug install'],
-      \ 'c' : [':PlugClean'                        , 'plug clean'],
-      \ 'u' : [':PlugUpdate'                       , 'plug update'],
+      \ 'i' : [':PlugInstall' , 'plug install'],
+      \ 'c' : [':PlugClean'   , 'plug clean'],
+      \ 'u' : [':PlugUpdate'  , 'plug update'],
       \ }
 
 let g:which_key_map.g = {
       \ 'name' : '+Git' ,
-      \ 'b' : [':Gblame'                           , 'blame'],
-      \ 'c' : [':Gcommit'                          , 'commit'],
-      \ 'd' : [':Gvdiffsplit'                      , 'diff split'],
-      \ 's' : [':Git'                              , 'log'],
-      \ 'r' : [':GRead'                            , 'discard'],
+      \ 'b' : [':Gblame'      , 'blame'],
+      \ 'c' : [':Gcommit'     , 'commit'],
+      \ 'd' : [':Gvdiffsplit' , 'diff split'],
+      \ 's' : [':Git'         , 'log'],
+      \ 'r' : [':GRead'       , 'discard'],
       \ }
 
 let g:which_key_map.t = {
       \ 'name' : '+Terminal' ,
-      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
-      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
-      \ 'n' : [':FloatermNew node'                              , 'node'],
-      \ 'p' : [':FloatermNew python'                            , 'python'],
-      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
-      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
-      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ 'g' : [':FloatermNew lazygit'                      , 'git'],
+      \ 'd' : [':FloatermNew lazydocker'                   , 'docker'],
+      \ 'n' : [':FloatermNew node'                         , 'node'],
+      \ 'p' : [':FloatermNew python'                       , 'python'],
+      \ 'r' : [':FloatermNew ranger'                       , 'ranger'],
+      \ 't' : [':FloatermNew --wintype=normal --height=10' , 'terminal'],
+      \ 'y' : [':FloatermNew ytop'                         , 'ytop'],
+      \ 's' : [':FloatermNew ncdu'                         , 'ncdu'],
       \ }
+
+let g:which_key_map.f = {
+      \ 'name' : '+find & replace' ,
+      \ 'b' : [':Farr --source=vimgrep'    , 'buffer'],
+      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
+      \ }
+
+let g:which_key_map.s = {
+      \ 'name' : '+Surround' ,
+      \ 'a' : ["ysiw'"       , 'add aspas'],
+      \ 'A' : ["yss'"        , 'add full aspas'],
+      \ }
+
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")

@@ -15,6 +15,7 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
+  "tsserver.npm": "/home/diorgelesdias/.nvm/versions/node/v12.18.3/bin/npm",
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",

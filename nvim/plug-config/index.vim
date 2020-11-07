@@ -15,6 +15,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
 Plug 'lifepillar/vim-solarized8'
 Plug 'lifepillar/vim-gruvbox8'
+Plug 'hzchirs/vim-material'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -48,6 +49,7 @@ Plug 'jmcantrell/vim-virtualenv'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'unblevable/quick-scope'
+Plug 'ChristianChiarulli/far.vim'
 
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -73,4 +75,5 @@ source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/indentline.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
+source $HOME/.config/nvim/plug-config/far.vim
 

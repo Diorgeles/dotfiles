@@ -10,6 +10,10 @@ set termguicolors
 colorscheme forest-night
 let g:airline_theme='forest_night'
 
+" let g:material_style='palenight'
+" colorscheme vim-material
+" let g:airline_theme='material'
+
 " colorscheme onedark
 " let g:airline_theme='onedark'
 
