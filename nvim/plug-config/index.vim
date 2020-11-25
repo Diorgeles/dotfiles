@@ -13,9 +13,7 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/forest-night'
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
-Plug 'lifepillar/vim-solarized8'
 Plug 'lifepillar/vim-gruvbox8'
-Plug 'hzchirs/vim-material'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -29,6 +27,7 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+" Plug 'nvim-treesitter/nvim-treesitter'
 
 " Editor
 Plug 'Yggdroot/indentLine'
@@ -44,6 +43,11 @@ Plug 'Asheq/close-buffers.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'jmcantrell/vim-virtualenv'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
+Plug 'wfxr/minimap.vim'
+Plug 'preservim/tagbar'
+Plug 'easymotion/vim-easymotion'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -59,6 +63,8 @@ Plug 'mgedmin/python-imports.vim'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 
 call plug#end()
 
@@ -76,4 +82,4 @@ source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/indentline.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/far.vim
-
+source $HOME/.config/nvim/plug-config/signify.vim

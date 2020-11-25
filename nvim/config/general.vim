@@ -20,6 +20,12 @@ let g:airline_theme='forest_night'
 " colorscheme nord
 " let g:airline_theme='nord'
 
+" let g:sonokai_style = 'maia'
+" let g:airline_theme = 'sonokai'
+" colorscheme sonokai
+" let g:sonokai_enable_italic = 1
+" let g:sonokai_disable_italic_comment = 1
+
 " =========================== General ===========================
 set mouse=a
 set hidden

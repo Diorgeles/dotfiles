@@ -25,15 +25,17 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map['='] = [ '<C-w>='               , 'balance windows' ]
-let g:which_key_map['|'] = [ '<C-W>v'               , 'split right']
 let g:which_key_map[','] = [ ':SClose'              , 'start screen' ]
-let g:which_key_map['_'] = [ '<C-W>s'               , 'split below']
-let g:which_key_map['e'] = [ ':CocCommand explorer' , 'coc explorer' ]
 let g:which_key_map['q'] = [ 'q'                    , 'quit' ]
-let g:which_key_map['s'] = [ ':SSave'               , 'save session' ]
-let g:which_key_map['d'] = [ ':SDelete'             , 'delete session' ]
-let g:which_key_map['r'] = [ ':source $MYVIMRC'     , 'reload init.vim']
+
+let g:which_key_map.e = {
+      \ 'name' : '+Editor' ,
+      \ 'e' : [':CocCommand explorer'  , 'coc explorer'],
+      \ 's' : [':SSave'                , 'save session'],
+      \ 'd' : [':SDelete'              , 'delete session'],
+      \ 'r' : [':source $MYVIMRC'      , 'reload init.vim'],
+      \ 'f' : ['<Plug>(easymotion-sn)' , 'Easymotion'],
+      \ }
 
 let g:which_key_map.c = {
       \ 'name' : '+Coc Nvim' ,
@@ -61,6 +63,7 @@ let g:which_key_map.g = {
       \ 'd' : [':Gvdiffsplit' , 'diff split'],
       \ 's' : [':Git'         , 'log'],
       \ 'r' : [':GRead'       , 'discard'],
+      \ 'v' : [':GV'          , 'git reflog'],
       \ }
 
 let g:which_key_map.t = {
@@ -73,6 +76,7 @@ let g:which_key_map.t = {
       \ 't' : [':FloatermNew --wintype=normal --height=10' , 'terminal'],
       \ 'y' : [':FloatermNew ytop'                         , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                         , 'ncdu'],
+      \ 'm' : [':Glow'                                     , 'preview markdown'],
       \ }
 
 let g:which_key_map.f = {
@@ -85,6 +89,15 @@ let g:which_key_map.s = {
       \ 'name' : '+Surround' ,
       \ 'a' : ["ysiw'"       , 'add aspas'],
       \ 'A' : ["yss'"        , 'add full aspas'],
+      \ }
+
+let g:which_key_map.w = {
+      \ 'name' : '+Windows' ,
+      \ '=' : [ '<C-w>='               , 'balance windows' ],
+      \ '|' : [ '<C-W>v'               , 'split right'],
+      \ '_' : [ '<C-W>s'               , 'split below'],
+      \ 'r' : [ '<C-W>r'               , 'move right'],
+      \ 'l' : [ '<C-W>L'               , 'move left'],
       \ }
 
 " Register which key map

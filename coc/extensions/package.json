@@ -2,23 +2,27 @@
   "dependencies": {
     "coc-cfn-lint": ">=0.1.1",
     "coc-eslint": ">=1.3.2",
-    "coc-explorer": ">=0.8.2",
-    "coc-git": ">=2.0.1",
+    "coc-explorer": ">=0.11.2",
+    "coc-git": ">=2.0.4",
     "coc-gitignore": ">=0.0.4",
     "coc-highlight": ">=1.2.6",
     "coc-json": ">=1.3.2",
+    "coc-lua": ">=0.3.0",
+    "coc-markdownlint": ">=1.8.0",
     "coc-marketplace": ">=1.7.0",
+    "coc-markmap": ">=0.4.1",
     "coc-pairs": ">=1.2.21",
     "coc-prettier": ">=1.1.17",
+    "coc-project-manager": ">=0.0.0-development",
     "coc-python": ">=1.2.12",
     "coc-react-refactor": ">=0.3.0",
-    "coc-snippets": ">=2.2.1",
+    "coc-snippets": ">=2.2.9",
     "coc-styled-components": ">=0.3.0",
     "coc-syntax": ">=1.2.4",
     "coc-tabnine": ">=1.2.2",
     "coc-tsserver": ">=1.5.8",
-    "coc-xml": ">=1.13.2",
-    "coc-yaml": ">=1.1.0",
-    "coc-yank": ">=1.1.8"
+    "coc-xml": ">=1.14.0",
+    "coc-yaml": ">=1.1.2",
+    "coc-yank": ">=1.1.11"
   }
 }
