@@ -34,7 +34,12 @@ let g:which_key_map.e = {
       \ 's' : [':SSave'                , 'save session'],
       \ 'd' : [':SDelete'              , 'delete session'],
       \ 'r' : [':source $MYVIMRC'      , 'reload init.vim'],
-      \ 'f' : ['<Plug>(easymotion-sn)' , 'Easymotion'],
+      \ }
+
+let g:which_key_map.f = {
+      \ 'name' : '+Find',
+      \ 'e' : ['<Plug>(easymotion-sn)' , 'Easymotion'],
+      \ 'f' : [':RG'                   , 'Find words'],
       \ }
 
 let g:which_key_map.c = {
@@ -79,11 +84,6 @@ let g:which_key_map.t = {
       \ 'm' : [':Glow'                                     , 'preview markdown'],
       \ }
 
-let g:which_key_map.f = {
-      \ 'name' : '+find & replace' ,
-      \ 'b' : [':Farr --source=vimgrep'    , 'buffer'],
-      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
-      \ }
 
 let g:which_key_map.s = {
       \ 'name' : '+Surround' ,

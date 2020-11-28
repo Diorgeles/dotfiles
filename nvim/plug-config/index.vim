@@ -42,7 +42,6 @@ Plug 'voldikss/vim-floaterm'
 Plug 'Asheq/close-buffers.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-Plug 'jmcantrell/vim-virtualenv'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 Plug 'wfxr/minimap.vim'
@@ -53,12 +52,10 @@ Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'unblevable/quick-scope'
-Plug 'ChristianChiarulli/far.vim'
 
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
-Plug 'mgedmin/python-imports.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
