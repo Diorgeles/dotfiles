@@ -23,6 +23,8 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
+" Ignore mappings
+" let g:which_key_map['='] = 'which_key_ignore'
 
 " Single mappings
 let g:which_key_map[','] = [ ':SClose'              , 'start screen' ]
@@ -78,7 +80,8 @@ let g:which_key_map.t = {
       \ 'n' : [':FloatermNew node'                         , 'node'],
       \ 'p' : [':FloatermNew python'                       , 'python'],
       \ 'r' : [':FloatermNew ranger'                       , 'ranger'],
-      \ 't' : [':FloatermNew --wintype=normal --height=10' , 'terminal'],
+      \ 't' : [':FloatermNew --wintype=normal --height=15' , 'terminal'],
+      \ 'T' : [':FloatermNew'                              , 'float terminal'],
       \ 'y' : [':FloatermNew ytop'                         , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                         , 'ncdu'],
       \ 'm' : [':Glow'                                     , 'preview markdown'],

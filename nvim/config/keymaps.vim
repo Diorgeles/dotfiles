@@ -5,12 +5,6 @@ nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :CocSearch<space>
 nnoremap ge :CocCommand explorer<CR>
 
-" Git
-nnoremap <leader>gd :Gvdiffsplit<CR>
-nnoremap <leader>gs :Git<CR>
-nnoremap <leader>gb :Gblame<CR>
-nnoremap <leader>gc :Gcommit<CR>
-
 " General
 nnoremap <c-s> :w!<cr>
 nnoremap <c-q> :q!<cr>
@@ -26,7 +20,6 @@ map <A-S-Right> <C-W><
 map <A-S-Left> <C-W>>
 map <A-S-Up> <C-W>-
 map <A-S-Down> <C-W>+
-map <leader>= <C-W>=
 
 " Move Line
 nnoremap <A-j> :m .+1<CR>==
