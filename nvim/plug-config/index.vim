@@ -27,6 +27,9 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'alvan/vim-closetag'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 " Plug 'nvim-treesitter/nvim-treesitter'
 
 " Editor
@@ -47,6 +50,7 @@ Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 Plug 'wfxr/minimap.vim'
 Plug 'preservim/tagbar'
 Plug 'easymotion/vim-easymotion'
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -78,5 +82,6 @@ source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/indentline.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
-source $HOME/.config/nvim/plug-config/far.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/signify.vim
+source $HOME/.config/nvim/plug-config/fugitive.vim

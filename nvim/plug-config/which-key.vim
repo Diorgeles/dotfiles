@@ -32,14 +32,13 @@ let g:which_key_map['q'] = [ 'q'                    , 'quit' ]
 
 let g:which_key_map.e = {
       \ 'name' : '+Editor' ,
-      \ 'e' : [':CocCommand explorer'  , 'coc explorer'],
       \ 's' : [':SSave'                , 'save session'],
       \ 'd' : [':SDelete'              , 'delete session'],
       \ 'r' : [':source $MYVIMRC'      , 'reload init.vim'],
       \ }
 
 let g:which_key_map.f = {
-      \ 'name' : '+Find',
+      \ 'name' : '+Find' ,
       \ 'e' : ['<Plug>(easymotion-sn)' , 'Easymotion'],
       \ 'f' : [':RG'                   , 'Find words'],
       \ }
@@ -68,9 +67,10 @@ let g:which_key_map.g = {
       \ 'b' : [':Gblame'      , 'blame'],
       \ 'c' : [':Gcommit'     , 'commit'],
       \ 'd' : [':Gvdiffsplit' , 'diff split'],
-      \ 's' : [':Git'         , 'log'],
+      \ 't' : [':Gtabedit'    , 'Tab Git'],
+      \ 'g' : [':vertical Git', 'Git'],
       \ 'r' : [':GRead'       , 'discard'],
-      \ 'v' : [':GV'          , 'git reflog'],
+      \ 'l' : [':GV'          , 'git reflog'],
       \ }
 
 let g:which_key_map.t = {
@@ -80,7 +80,7 @@ let g:which_key_map.t = {
       \ 'n' : [':FloatermNew node'                         , 'node'],
       \ 'p' : [':FloatermNew python'                       , 'python'],
       \ 'r' : [':FloatermNew ranger'                       , 'ranger'],
-      \ 't' : [':FloatermNew --wintype=normal --height=15' , 'terminal'],
+      \ 't' : [':FloatermNew --wintype=normal --height=20' , 'terminal'],
       \ 'T' : [':FloatermNew'                              , 'float terminal'],
       \ 'y' : [':FloatermNew ytop'                         , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                         , 'ncdu'],
@@ -97,10 +97,11 @@ let g:which_key_map.s = {
 let g:which_key_map.w = {
       \ 'name' : '+Windows' ,
       \ '=' : [ '<C-w>='               , 'balance windows' ],
-      \ '|' : [ '<C-W>v'               , 'split right'],
-      \ '_' : [ '<C-W>s'               , 'split below'],
+      \ '\' : [ '<C-W>v'               , 'split right'],
+      \ '-' : [ '<C-W>s'               , 'split below'],
       \ 'r' : [ '<C-W>r'               , 'move right'],
       \ 'l' : [ '<C-W>L'               , 'move left'],
+      \ 'w' : [ ':vertical resize 60'  , 'resize this window'],
       \ }
 
 " Register which key map
