@@ -61,5 +61,8 @@ set ignorecase
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
 set foldmethod=syntax
 set foldlevel=99
-" let g:ruby_host_prog='~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
+set shortmess+=c
+let g:ruby_host_prog='~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 " let g:virtualenv_directory='~/.virtualenvs' 
+" Kill the capslock when leaving insert mode.
+autocmd InsertLeave * set iminsert=0

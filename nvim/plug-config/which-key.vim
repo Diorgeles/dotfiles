@@ -29,6 +29,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map[','] = [ ':SClose'              , 'start screen' ]
 let g:which_key_map['q'] = [ 'q'                    , 'quit' ]
+let g:which_key_map['v'] = [ ':Vista'               , 'Open Vista' ]
 
 let g:which_key_map.e = {
       \ 'name' : '+Editor' ,
@@ -45,10 +46,21 @@ let g:which_key_map.f = {
 
 let g:which_key_map.c = {
       \ 'name' : '+Coc Nvim' ,
-      \ 'u' : [':CocUpdate'           , 'coc update'],
-      \ 'm' : [':CocList marketplace' , 'coc marketplace'],
+      \ 'u' : [':CocUpdate'                   , 'coc update'],
+      \ 'm' : [':CocList marketplace'         , 'coc marketplace'],
+      \ 'a' : [':CocList diagnostics'         , 'coc diagnostic'],
+      \ 'e' : [':CocList extensions'          , 'coc extensions'],
+      \ 'c' : [':CocList commands'            , 'coc commands'],
+      \ 'o' : [':CocList outline'             , 'coc outline'],
+      \ 's' : [':CocList -I symbols'          , 'coc -I symbols'],
+      \ 'j' : [':CocNext'                     , 'coc-next'],
+      \ 'f' : ['<Plug>(coc-format-selected)'  , 'coc-format-selected'],
+      \ 'p' : ['<Plug>(coc-refactor)'         , 'coc-refactor'],
+      \ 'r' : ['<Plug>(coc-rename)'           , 'coc-rename'],
+      \ 'q' : ['<Plug>(coc-fix-current)'           , 'coc-fix-current'],
+      \ 'k' : [':CocPrev'                     , 'coc-prev'],
+      \ 'l' : [':CocListResume'               , 'coc-list-resume'],
       \ }
-
 let g:which_key_map.n = {
       \ 'name' : '+Navigation' ,
       \ 'n' : [':tabnext'      , 'tab Next'],
@@ -96,9 +108,9 @@ let g:which_key_map.s = {
 
 let g:which_key_map.w = {
       \ 'name' : '+Windows' ,
-      \ '=' : [ '<C-w>='               , 'balance windows' ],
-      \ '\' : [ '<C-W>v'               , 'split right'],
-      \ '-' : [ '<C-W>s'               , 'split below'],
+      \ '1' : [ '<C-w>='               , 'balance windows' ],
+      \ '2' : [ '<C-W>v'               , 'split right'],
+      \ '3' : [ '<C-W>s'               , 'split below'],
       \ 'r' : [ '<C-W>r'               , 'move right'],
       \ 'l' : [ '<C-W>L'               , 'move left'],
       \ 'w' : [ ':vertical resize 60'  , 'resize this window'],

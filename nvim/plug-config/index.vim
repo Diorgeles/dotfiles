@@ -7,13 +7,8 @@ endif
 
 call plug#begin()
 " Temas
-Plug 'joshdick/onedark.vim'
-Plug 'rakr/vim-one'
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/forest-night'
-Plug 'joshdick/onedark.vim'
-Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
-Plug 'lifepillar/vim-gruvbox8'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -22,7 +17,6 @@ Plug 'ryanoasis/vim-devicons'
 
 " Syntax
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-" Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
@@ -46,16 +40,20 @@ Plug 'Asheq/close-buffers.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'editorconfig/editorconfig-vim'
-Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
-Plug 'wfxr/minimap.vim'
-Plug 'preservim/tagbar'
+" Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
+" Plug 'wfxr/minimap.vim'
+" Plug 'preservim/tagbar'
 Plug 'easymotion/vim-easymotion'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+Plug 'liuchengxu/vista.vim'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'unblevable/quick-scope'
+" Plug 'nvim-lua/popup.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
 
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -85,3 +83,4 @@ source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
+source $HOME/.config/nvim/plug-config/vista.vim

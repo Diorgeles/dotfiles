@@ -6,7 +6,8 @@ let g:startify_lists = [
       \ ]
 let g:startify_bookmarks = [
       \ { 'z': '~/.zshrc' },
-      \ { 't': '~/.tmux' },
+      \ { 't': '~/.tmux.conf' },
+      \ { 'x': '~/.config/termite/config' },
       \ ]
 let g:startify_session_dir = '~/.config/nvim/session'
 let g:startify_change_to_vcs_root = 1
