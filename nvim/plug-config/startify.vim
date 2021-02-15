@@ -5,6 +5,7 @@ let g:startify_lists = [
       \ { 'type': 'files',     'header': ['   Files']            },
       \ ]
 let g:startify_bookmarks = [
+      \ { 'a': '~/.config/alacritty/alacritty.yml' },
       \ { 'z': '~/.zshrc' },
       \ { 't': '~/.tmux.conf' },
       \ { 'x': '~/.config/termite/config' },

@@ -10,8 +10,7 @@ set termguicolors
 colorscheme forest-night
 let g:airline_theme='forest_night'
 
-" let g:material_style='palenight'
-" colorscheme vim-material
+" let g:material_style='palenight' colorscheme vim-material
 " let g:airline_theme='material'
 
 " colorscheme onedark
@@ -39,11 +38,7 @@ set nowrap
 set showcmd
 set updatetime=300
 set autoread                            " Automatically reread changed files without asking me anything
-" set cmdheight=2                       " More space for displaying messages
 set clipboard=unnamedplus
-set noswapfile
-set nobackup                            " This is recommended by coc
-set nowritebackup                       " This is recommended by coc
 set showtabline=2                       " Always show tabs
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set iskeyword+=-                      	" treat dash separated words as a word text object"
@@ -62,7 +57,32 @@ set timeoutlen=300                      " By default timeoutlen is 1000 ms
 set foldmethod=syntax
 set foldlevel=99
 set shortmess+=c
+" ================ Folds ============================
+set foldmethod=indent   "fold based on indent
+set foldnestmax=3       "deepest fold is 3 levels
+set nofoldenable        "dont fold by default
+
+" ================ Scrolling ========================
+set scrolloff=8         "Start scrolling when we're 8 lines away from margins
+set sidescrolloff=15
+set sidescroll=1
+
+" ================ Turn Off Swap Files ==============
+set noswapfile
+set nobackup
+set nowb
+set nowritebackup                       " This is recommended by coc
+
 let g:ruby_host_prog='~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
-" let g:virtualenv_directory='~/.virtualenvs' 
-" Kill the capslock when leaving insert mode.
-autocmd InsertLeave * set iminsert=0
+" let g:clipboard = {
+"  \   'name': 'myClipboard',
+"  \   'copy': {
+"  \      '+': 'tmux load-buffer -',
+"  \      '*': 'tmux load-buffer -',
+"  \    },
+"  \   'paste': {
+"  \      '+': 'tmux save-buffer -',
+"  \      '*': 'tmux save-buffer -',
+"  \   },
+"  \   'cache_enabled': 1,
+"  \ }

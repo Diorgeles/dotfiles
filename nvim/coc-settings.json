@@ -1,6 +1,6 @@
 {
-  "suggest.enablePreview": true,
-  "suggest.maxCompleteItemCount": 20,
+  "list.source.mru.excludePatterns": ["**/.git/*", "/tmp/*", "**/dist/*"],
+  "suggest.snippetIndicator": " ►",
   "diagnostic.errorSign": " ",
   "diagnostic.warningSign": " ",
   "diagnostic.infoSign": "",
@@ -8,13 +8,6 @@
   "diagnostic.refreshOnInsertMode": true,
   "diagnostic.enableMessage": "never",
   "diagnostic.displayByAle": true,
-  "diagnostic.virtualText": true,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "explorer.keyMappings.global": {
-    "<cr>": ["expandable?", "expand", "open"],
-    "v": "open:vsplit"
-  },
   "tsserver.npm": "/home/diorgelesdias/.nvm/versions/node/v12.18.3/bin/npm",
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
@@ -56,5 +49,14 @@
     "typeParameter": "\uf728",
     "default": "\uf29c"
   },
-  "coc.preferences.extensionUpdateCheck": "daily"
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.icon.enableVimDevicons": true,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit",
+    "dd": "delete",
+    "cc": "cutFile",
+    ".": "toggleHidden"
+  }
 }

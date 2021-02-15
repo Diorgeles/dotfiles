@@ -18,6 +18,8 @@ Plug 'ryanoasis/vim-devicons'
 " Syntax
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+" Plug 'yuezk/vim-js'
+" Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
@@ -27,6 +29,7 @@ Plug 'honza/vim-snippets'
 " Plug 'nvim-treesitter/nvim-treesitter'
 
 " Editor
+Plug 'wakatime/vim-wakatime'
 Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mg979/vim-visual-multi'

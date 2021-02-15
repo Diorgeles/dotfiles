@@ -46,9 +46,10 @@ let g:which_key_map.f = {
 
 let g:which_key_map.c = {
       \ 'name' : '+Coc Nvim' ,
+      \ 'a' : [':CocList diagnostics'         , 'coc all diagnostic'],
       \ 'u' : [':CocUpdate'                   , 'coc update'],
       \ 'm' : [':CocList marketplace'         , 'coc marketplace'],
-      \ 'a' : [':CocList diagnostics'         , 'coc diagnostic'],
+      \ 'd' : [':CocDiagnostics'              , 'coc diagnostic'],
       \ 'e' : [':CocList extensions'          , 'coc extensions'],
       \ 'c' : [':CocList commands'            , 'coc commands'],
       \ 'o' : [':CocList outline'             , 'coc outline'],
@@ -93,10 +94,9 @@ let g:which_key_map.t = {
       \ 'p' : [':FloatermNew python'                       , 'python'],
       \ 'r' : [':FloatermNew ranger'                       , 'ranger'],
       \ 't' : [':FloatermNew --wintype=normal --height=20' , 'terminal'],
-      \ 'T' : [':FloatermNew'                              , 'float terminal'],
       \ 'y' : [':FloatermNew ytop'                         , 'ytop'],
+      \ 'h' : [':FloatermNew htop'                         , 'htop'],
       \ 's' : [':FloatermNew ncdu'                         , 'ncdu'],
-      \ 'm' : [':Glow'                                     , 'preview markdown'],
       \ }
 
 
@@ -104,7 +104,14 @@ let g:which_key_map.s = {
       \ 'name' : '+Surround' ,
       \ 'a' : ["ysiw'"       , 'add aspas'],
       \ 'A' : ["yss'"        , 'add full aspas'],
+      \ 'b' : ["ysiw{"       , 'add brackets'],
+      \ 'B' : ["yss{"        , 'add full brackets'],
+      \ 'l' : ["ysiw["       , 'add list'],
+      \ 'L' : ["yss["        , 'add full list'],
+      \ 't' : ["ysiw("       , 'add tupla'],
+      \ 'T' : ["yss("        , 'add full tupla'],
       \ }
+
 
 let g:which_key_map.w = {
       \ 'name' : '+Windows' ,
