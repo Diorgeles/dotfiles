@@ -5,4 +5,6 @@
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   ln -s $PWD/nvim ~/.config/nvim
   ln -s $PWD/coc ~/.config/coc
+  ln -s $PWD/.zshrc ~/
+  ln -s $PWD/.tmux ~/
 ```

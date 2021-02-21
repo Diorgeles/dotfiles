@@ -1,9 +1,8 @@
 let g:startify_lists = [
       \ { 'type': 'sessions',  'header': ['   Sessions']       },
       \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-      \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
-      \ { 'type': 'files',     'header': ['   Files']            },
       \ ]
+
 let g:startify_bookmarks = [
       \ { 'a': '~/.config/alacritty/alacritty.yml' },
       \ { 'z': '~/.zshrc' },

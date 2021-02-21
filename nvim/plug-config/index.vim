@@ -29,7 +29,7 @@ Plug 'honza/vim-snippets'
 " Plug 'nvim-treesitter/nvim-treesitter'
 
 " Editor
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mg979/vim-visual-multi'
@@ -41,7 +41,6 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'voldikss/vim-floaterm'
 Plug 'Asheq/close-buffers.vim'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'editorconfig/editorconfig-vim'
 " Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 " Plug 'wfxr/minimap.vim'

@@ -73,7 +73,8 @@ set nobackup
 set nowb
 set nowritebackup                       " This is recommended by coc
 
-let g:ruby_host_prog='~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
+let g:ruby_host_prog='~/.local/share/gem/ruby/2.7.0/bin/neovim-ruby-host'
+
 " let g:clipboard = {
 "  \   'name': 'myClipboard',
 "  \   'copy': {
