@@ -8,6 +8,15 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export PROJECTS=$HOME/Documents/projects
 export STHIMA=$HOME/Documents/sthima
 
+# Dev
+alias gitt="git tag | sort -V | grep stag"
+alias _nvim=$HOME/Documents/softwares/nvim.appimage
+alias Wstart= $XDG_SESSION_TYPE=wayland dbus-run-session gnome-session
+
+# Github CLI
+autoload -U compinit
+compinit -i
+
 # Personal
 alias gop=$PROJECTS
 alias gopDelivery=$PROJECTS/delivery

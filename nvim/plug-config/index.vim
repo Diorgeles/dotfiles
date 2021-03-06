@@ -7,13 +7,15 @@ endif
 
 call plug#begin()
 " Temas
-Plug 'gruvbox-community/gruvbox'
+" Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/forest-night'
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
+" Treesitter suport themes
+" Plug 'rktjmp/lush.nvim'
+" Plug 'npxbr/gruvbox.nvim'
 
 " Syntax
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -26,11 +28,13 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'alvan/vim-closetag'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-" Plug 'nvim-treesitter/nvim-treesitter'
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Editor
 " Plug 'wakatime/vim-wakatime'
 Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-capslock'
+Plug 'suxpert/vimcaps'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mg979/vim-visual-multi'
 Plug 'airblade/vim-rooter'
@@ -45,9 +49,13 @@ Plug 'editorconfig/editorconfig-vim'
 " Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 " Plug 'wfxr/minimap.vim'
 " Plug 'preservim/tagbar'
-Plug 'easymotion/vim-easymotion'
+" Plug 'easymotion/vim-easymotion'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'liuchengxu/vista.vim'
+" Plug 'neovim/nvim-lspconfig'
+Plug 'dhruvasagar/vim-zoom'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -86,3 +94,4 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
 source $HOME/.config/nvim/plug-config/vista.vim
+source $HOME/.config/nvim/plug-config/nvimTree.vim

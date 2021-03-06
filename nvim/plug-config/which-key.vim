@@ -62,6 +62,7 @@ let g:which_key_map.c = {
       \ 'k' : [':CocPrev'                     , 'coc-prev'],
       \ 'l' : [':CocListResume'               , 'coc-list-resume'],
       \ }
+
 let g:which_key_map.n = {
       \ 'name' : '+Navigation' ,
       \ 'n' : [':tabnext'      , 'tab Next'],
@@ -94,6 +95,7 @@ let g:which_key_map.t = {
       \ 'p' : [':FloatermNew python'                       , 'python'],
       \ 'r' : [':FloatermNew ranger'                       , 'ranger'],
       \ 't' : [':FloatermNew --wintype=normal --height=20' , 'terminal'],
+      \ 'v' : [':FloatermNew --wintype=vsplit --width=100' , 'vsplit terminal'],
       \ 'y' : [':FloatermNew ytop'                         , 'ytop'],
       \ 'h' : [':FloatermNew htop'                         , 'htop'],
       \ 's' : [':FloatermNew ncdu'                         , 'ncdu'],
