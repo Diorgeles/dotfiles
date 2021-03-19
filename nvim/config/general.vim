@@ -74,6 +74,7 @@ set nowb
 set nowritebackup                       " This is recommended by coc
 
 let g:ruby_host_prog='~/.local/share/gem/ruby/2.7.0/bin/neovim-ruby-host'
+let g:gitblame_date_format = '%d/%m/%Y'
 
 " let g:clipboard = {
 "  \   'name': 'myClipboard',

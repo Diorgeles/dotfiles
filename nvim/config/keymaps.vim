@@ -2,6 +2,7 @@ let mapleader="\<space>"
 
 " Open extensions
 nnoremap <c-p> :Files<cr>
+nnoremap <c-P> :Files<cr>
 nnoremap <c-f> :CocSearch<space>
 nnoremap ge :CocCommand explorer<CR>
 
@@ -32,5 +33,4 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 " Buffer
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
-
 

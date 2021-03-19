@@ -25,10 +25,11 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag' 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'p00f/nvim-ts-rainbow'
 
 " Editor
 " Plug 'wakatime/vim-wakatime'
@@ -53,20 +54,19 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'liuchengxu/vista.vim'
 " Plug 'neovim/nvim-lspconfig'
-Plug 'dhruvasagar/vim-zoom'
-Plug 'kyazdani42/nvim-web-devicons' " for file icons
-Plug 'kyazdani42/nvim-tree.lua'
+" Plug 'hrsh7th/nvim-compe'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'unblevable/quick-scope'
+
 " Plug 'nvim-lua/popup.nvim'
 " Plug 'nvim-lua/plenary.nvim'
 " Plug 'nvim-telescope/telescope.nvim'
 
 " Lint
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'dense-analysis/ale'
 
 " Git
@@ -74,6 +74,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
+Plug 'f-person/git-blame.nvim'
 
 call plug#end()
 
@@ -94,4 +95,6 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
 source $HOME/.config/nvim/plug-config/vista.vim
-source $HOME/.config/nvim/plug-config/nvimTree.vim
+" source $HOME/.config/nvim/plug-config/telescope.vim
+" source $HOME/.config/nvim/plug-config/lsp-config.vim
+" source $HOME/.config/nvim/plug-config/compe-config.lua
