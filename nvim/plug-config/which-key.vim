@@ -40,18 +40,18 @@ let g:which_key_map.e = {
 
 let g:which_key_map.f = {
       \ 'name' : '+Find' ,
-      \ 'e' : ['<Plug>(easymotion-sn)' , 'Easymotion'],
+      \ 'e' : [':HopWord'              ,'Easymotion'],
       \ 'f' : [':RG'                   , 'Find words'],
       \ }
 
 let g:which_key_map.c = {
       \ 'name' : '+Coc Nvim' ,
-      \ 'a' : [':CocList diagnostics'         , 'coc all diagnostic'],
+      \ 'a' : [':CocFzfList diagnostics'      , 'coc all diagnostic'],
       \ 'u' : [':CocUpdate'                   , 'coc update'],
-      \ 'm' : [':CocList marketplace'         , 'coc marketplace'],
-      \ 'd' : [':CocDiagnostics'              , 'coc diagnostic'],
-      \ 'e' : [':CocList extensions'          , 'coc extensions'],
-      \ 'c' : [':CocList commands'            , 'coc commands'],
+      \ 'm' : [':CocFzfList marketplace'         , 'coc marketplace'],
+      \ 'd' : [':CocFzfList diagnostics --current-buf' , 'coc diagnostic'],
+      \ 'e' : [':CocFzfList extensions'          , 'coc extensions'],
+      \ 'c' : [':CocFzfList commands'            , 'coc commands'],
       \ 'o' : [':CocList outline'             , 'coc outline'],
       \ 's' : [':CocList -I symbols'          , 'coc -I symbols'],
       \ 'j' : [':CocNext'                     , 'coc-next'],
@@ -117,11 +117,11 @@ let g:which_key_map.s = {
 
 let g:which_key_map.w = {
       \ 'name' : '+Windows' ,
-      \ '1' : [ '<C-w>='               , 'balance windows' ],
-      \ '2' : [ '<C-W>v'               , 'split right'],
-      \ '3' : [ '<C-W>s'               , 'split below'],
-      \ 'r' : [ '<C-W>r'               , 'move right'],
-      \ 'l' : [ '<C-W>L'               , 'move left'],
+      \ '=' : [ '<C-w>='               , 'balance windows' ],
+      \ '1' : [ '<C-W>v'               , 'split right'],
+      \ '2' : [ '<C-W>s'               , 'split below'],
+      \ 'l' : [ '<C-W>r'               , 'move right'],
+      \ 'h' : [ '<C-W>H'               , 'move left'],
       \ 'w' : [ ':vertical resize 60'  , 'resize this window'],
       \ }
 

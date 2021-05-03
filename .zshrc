@@ -23,9 +23,10 @@ alias gopWallet=$PROJECTS/wallet
 
 # Sthima
 alias gos=$STHIMA
-alias gosUrbe=$STHIMA/urbe
 alias gosMBC=$STHIMA/mbc
-alias gosCDCT=$STHIMA/genetica
+alias gosPE=$STHIMA/peregrino
+alias gosWE=$STHIMA/website
+alias gosGE=$STHIMA/genetica
 alias gosNestTemplate=$STHIMA/nestjs-template
 
 export QT_QPA_PLATFORM=wayland 

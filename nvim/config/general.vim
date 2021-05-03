@@ -1,29 +1,30 @@
 " =========================== Tema ===========================
 set termguicolors
 
-" colorscheme gruvbox
-" let g:gruvbox_contrast="hard"
+" let g:gruvbox_contrast_dark="hard"
 " let g:gruvbox_undercurl=1
 " let g:gruvbox_underline=0
 " let g:airline_theme='gruvbox'
+" colorscheme gruvbox
 
-colorscheme forest-night
-let g:airline_theme='forest_night'
+let g:everforest_background = 'hard'
+let g:everforest_enable_italic = 1
+let g:everforest_disable_italic_comment = 1
+let g:airline_theme='everforest'
+colorscheme everforest
 
-" let g:material_style='palenight' colorscheme vim-material
-" let g:airline_theme='material'
-
-" colorscheme onedark
 " let g:airline_theme='onedark'
+" colorscheme onedark
 
-" colorscheme nord
-" let g:airline_theme='nord'
+" let g:airline_theme='onedark'
+" let g:material_style = 'palenight'
+" colorscheme material
 
-" let g:sonokai_style = 'maia'
-" let g:airline_theme = 'sonokai'
-" colorscheme sonokai
+" let g:sonokai_style = 'andromeda'
 " let g:sonokai_enable_italic = 1
 " let g:sonokai_disable_italic_comment = 1
+" let g:airline_theme='sonokai'
+" colorscheme sonokai
 
 " =========================== General ===========================
 set mouse=a
@@ -76,15 +77,3 @@ set nowritebackup                       " This is recommended by coc
 let g:ruby_host_prog='~/.local/share/gem/ruby/2.7.0/bin/neovim-ruby-host'
 let g:gitblame_date_format = '%d/%m/%Y'
 
-" let g:clipboard = {
-"  \   'name': 'myClipboard',
-"  \   'copy': {
-"  \      '+': 'tmux load-buffer -',
-"  \      '*': 'tmux load-buffer -',
-"  \    },
-"  \   'paste': {
-"  \      '+': 'tmux save-buffer -',
-"  \      '*': 'tmux save-buffer -',
-"  \   },
-"  \   'cache_enabled': 1,
-"  \ }
