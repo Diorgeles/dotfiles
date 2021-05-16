@@ -1,17 +1,17 @@
 " =========================== Tema ===========================
 set termguicolors
 
-" let g:gruvbox_contrast_dark="hard"
-" let g:gruvbox_undercurl=1
-" let g:gruvbox_underline=0
-" let g:airline_theme='gruvbox'
-" colorscheme gruvbox
+let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_undercurl=1
+let g:gruvbox_underline=0
+let g:airline_theme='gruvbox'
+colorscheme gruvbox
 
-let g:everforest_background = 'hard'
-let g:everforest_enable_italic = 1
-let g:everforest_disable_italic_comment = 1
-let g:airline_theme='everforest'
-colorscheme everforest
+" let g:everforest_background = 'hard'
+" let g:everforest_enable_italic = 1
+" let g:everforest_disable_italic_comment = 1
+" let g:airline_theme='everforest'
+" colorscheme everforest
 
 " let g:airline_theme='onedark'
 " colorscheme onedark
@@ -25,6 +25,9 @@ colorscheme everforest
 " let g:sonokai_disable_italic_comment = 1
 " let g:airline_theme='sonokai'
 " colorscheme sonokai
+
+" let g:airline_theme='oceanicnext'
+" colorscheme OceanicNext
 
 " =========================== General ===========================
 set mouse=a

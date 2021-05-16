@@ -20,6 +20,7 @@ Plug 'tjdevries/colorbuddy.nvim'
 Plug 'marko-cerovac/material.nvim'
 Plug 'Th3Whit3Wolf/one-nvim'
 Plug 'joshdick/onedark.vim'
+Plug 'mhartington/oceanic-next'
 
 " Syntax
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
