@@ -59,5 +59,16 @@
     "dd": "delete",
     "cc": "cutFile",
     ".": "toggleHidden"
-  }
+  },
+  "explorer.file.hiddenRules": {
+    "patternMatches": ["^\\.git$", "^\\node_modules$", "^\\plugged$"]
+  },
+  "explorer.git.icon.status.added": "✚",
+  "explorer.git.icon.status.deleted": "✖",
+  "explorer.git.icon.status.renamed": "➜",
+  "explorer.git.icon.status.unmerged": "≠",
+  "explorer.git.icon.status.untracked": "?",
+  "explorer.git.icon.status.modified": "✹",
+  "explorer.git.icon.status.ignored": "☒",
+  "explorer.git.icon.status.mixed": "*"
 }

@@ -25,14 +25,12 @@ Plug 'mhartington/oceanic-next'
 " Syntax
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-" Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'peitalin/vim-jsx-typescript'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'alvan/vim-closetag' 
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 " Plug 'yuezk/vim-js'
 " Plug 'maxmellon/vim-jsx-pretty'
 " Plug 'p00f/nvim-ts-rainbow'
@@ -58,6 +56,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'karb94/neoscroll.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'kshenoy/vim-signature'
 " Plug 'romgrk/barbar.nvim'
 " Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 " Plug 'wfxr/minimap.vim'
@@ -77,8 +76,8 @@ Plug 'antoinemadec/coc-fzf'
 
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-Plug 'dense-analysis/ale'
 
+Plug 'dense-analysis/ale'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'

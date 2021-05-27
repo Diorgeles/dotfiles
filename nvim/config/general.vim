@@ -1,7 +1,7 @@
 " =========================== Tema ===========================
 set termguicolors
 
-let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_contrast_dark="medium"
 let g:gruvbox_undercurl=1
 let g:gruvbox_underline=0
 let g:airline_theme='gruvbox'
@@ -12,6 +12,7 @@ colorscheme gruvbox
 " let g:everforest_disable_italic_comment = 1
 " let g:airline_theme='everforest'
 " colorscheme everforest
+
 
 " let g:airline_theme='onedark'
 " colorscheme onedark
@@ -57,21 +58,28 @@ set smartindent
 " set softtabstop=2                       " number of spaces in tab when editing
 " set copyindent 
 set ignorecase
+set smartcase 
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
 set foldmethod=syntax
 set foldlevel=99
 set shortmess+=c
+set redrawtime=10000
+syntax sync fromstart
+
 " ================ Folds ============================
+
 set foldmethod=indent   "fold based on indent
 set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
 " ================ Scrolling ========================
+
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
 " ================ Turn Off Swap Files ==============
+
 set noswapfile
 set nobackup
 set nowb
