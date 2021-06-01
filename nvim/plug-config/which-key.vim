@@ -104,14 +104,14 @@ let g:which_key_map.t = {
 
 let g:which_key_map.s = {
       \ 'name' : '+Surround' ,
-      \ 'a' : ["ysiw'"       , 'add aspas'],
-      \ 'A' : ["yss'"        , 'add full aspas'],
-      \ 'b' : ["ysiw{"       , 'add brackets'],
-      \ 'B' : ["yss{"        , 'add full brackets'],
-      \ 'l' : ["ysiw["       , 'add list'],
-      \ 'L' : ["yss["        , 'add full list'],
-      \ 't' : ["ysiw("       , 'add tupla'],
-      \ 'T' : ["yss("        , 'add full tupla'],
+      \ 'a' : ["ysiw'"       , 'add ""'],
+      \ 'A' : ["yss'"        , 'add full "" '],
+      \ 'b' : ["ysiw{"       , 'add {}'],
+      \ 'B' : ["yss{"        , 'add full {}'],
+      \ 'l' : ["ysiw["       , 'add []'],
+      \ 'L' : ["yss["        , 'add full []'],
+      \ 't' : ["ysiw("       , 'add ()'],
+      \ 'T' : ["yss("        , 'add full ()'],
       \ }
 
 
