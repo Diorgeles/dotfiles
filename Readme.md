@@ -9,4 +9,5 @@
   ln -s $PWD/.tmux.conf ~/
   ln -s $PWD/.tmux ~/
   ln -s $PWD/.gitconfig ~/
+  ln -s $PWD/alacritty ~/.config
 ```
