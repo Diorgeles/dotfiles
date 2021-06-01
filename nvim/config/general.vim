@@ -1,34 +1,17 @@
 " =========================== Tema ===========================
 set termguicolors
 
-let g:gruvbox_contrast_dark="medium"
-let g:gruvbox_undercurl=1
-let g:gruvbox_underline=0
-let g:airline_theme='gruvbox'
-colorscheme gruvbox
+" let g:gruvbox_contrast_dark="medium"
+" let g:gruvbox_undercurl=1
+" let g:gruvbox_underline=0
+" let g:airline_theme='gruvbox'
+" colorscheme gruvbox
 
-" let g:everforest_background = 'hard'
-" let g:everforest_enable_italic = 1
-" let g:everforest_disable_italic_comment = 1
-" let g:airline_theme='everforest'
-" colorscheme everforest
-
-
-" let g:airline_theme='onedark'
-" colorscheme onedark
-
-" let g:airline_theme='onedark'
-" let g:material_style = 'palenight'
-" colorscheme material
-
-" let g:sonokai_style = 'andromeda'
-" let g:sonokai_enable_italic = 1
-" let g:sonokai_disable_italic_comment = 1
-" let g:airline_theme='sonokai'
-" colorscheme sonokai
-
-" let g:airline_theme='oceanicnext'
-" colorscheme OceanicNext
+let g:everforest_background = 'hard'
+let g:everforest_enable_italic = 1
+let g:everforest_disable_italic_comment = 1
+let g:airline_theme='everforest'
+colorscheme everforest
 
 " =========================== General ===========================
 set mouse=a
@@ -85,6 +68,6 @@ set nobackup
 set nowb
 set nowritebackup                       " This is recommended by coc
 
-let g:ruby_host_prog='~/.local/share/gem/ruby/2.7.0/bin/neovim-ruby-host'
+" let g:ruby_host_prog='~/.local/share/gem/ruby/2.7.0/bin/neovim-ruby-host'
 let g:gitblame_date_format = '%d/%m/%Y'
 

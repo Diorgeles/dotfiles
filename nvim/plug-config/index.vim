@@ -9,18 +9,11 @@ call plug#begin()
 " Temas
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/forest-night'
-Plug 'sainnhe/gruvbox-material'
-Plug 'sainnhe/sonokai'
-Plug 'sainnhe/edge'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tjdevries/colorbuddy.nvim'
-Plug 'marko-cerovac/material.nvim'
-Plug 'Th3Whit3Wolf/one-nvim'
-Plug 'joshdick/onedark.vim'
-Plug 'mhartington/oceanic-next'
 
 " Syntax
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -75,7 +68,7 @@ Plug 'antoinemadec/coc-fzf'
 " Plug 'nvim-telescope/telescope.nvim'
 
 " Lint
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'dense-analysis/ale'
 " Git

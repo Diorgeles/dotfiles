@@ -11,6 +11,7 @@ export STHIMA=$HOME/Documents/sthima
 # Dev
 alias gitt="git tag | sort -V | grep stag"
 alias _nvim=$HOME/Documents/softwares/nvim.appimage
+alias insomnia=$HOME/Documents/softwares/Insomnia.Core-2021.3.0.AppImage
 
 # Github CLI
 autoload -U compinit

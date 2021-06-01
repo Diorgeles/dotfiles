@@ -7,7 +7,8 @@ let g:startify_bookmarks = [
       \ { 'a': '~/.config/alacritty/alacritty.yml' },
       \ { 'z': '~/.zshrc' },
       \ { 't': '~/.tmux.conf' },
-      \ { 'x': '~/.config/termite/config' },
+      \ { 'G': '~/.gitconfig' },
+      \ { 'l': '~/.config/lazygit/config.yml' },
       \ ]
 let g:startify_session_dir = '~/.config/nvim/session'
 let g:startify_change_to_vcs_root = 1
