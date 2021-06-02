@@ -10,4 +10,5 @@
   ln -s $PWD/.tmux ~/
   ln -s $PWD/.gitconfig ~/
   ln -s $PWD/alacritty ~/.config
+  ln -s $PWD/lazygit ~/.config
 ```
