@@ -50,6 +50,7 @@ Plug 'AndrewRadev/tagalong.vim'
 Plug 'karb94/neoscroll.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'kshenoy/vim-signature'
+Plug 'AndrewRadev/splitjoin.vim'
 " Plug 'romgrk/barbar.nvim'
 " Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 " Plug 'wfxr/minimap.vim'
@@ -76,7 +77,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
-Plug 'f-person/git-blame.nvim'
 Plug 'kdheepak/lazygit.nvim'
 
 call plug#end()
@@ -99,7 +99,6 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 source $HOME/.config/nvim/plug-config/closetag.vim
-lua require('neoscroll').setup()
 " source $HOME/.config/nvim/plug-config/telescope.vim
 " source $HOME/.config/nvim/plug-config/lsp-config.vim
 " source $HOME/.config/nvim/plug-config/compe-config.lua

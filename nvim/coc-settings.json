@@ -9,6 +9,24 @@
   "diagnostic.enableMessage": "never",
   "diagnostic.displayByAle": true,
   "tsserver.npm": "/home/diorgelesdias/.nvm/versions/node/v12.18.3/bin/npm",
+  "explorer.git.icon.status.added": "✚",
+  "explorer.git.icon.status.deleted": "✖",
+  "explorer.git.icon.status.renamed": "➜",
+  "explorer.git.icon.status.unmerged": "≠",
+  "explorer.git.icon.status.untracked": "?",
+  "explorer.git.icon.status.modified": "✹",
+  "explorer.git.icon.status.ignored": "☒",
+  "explorer.git.icon.status.mixed": "*",
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "git.addGBlameToVirtualText": true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.icon.enableVimDevicons": true,
+  "explorer.file.autoReveal": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
@@ -49,10 +67,6 @@
     "value": "  ",
     "enumMember": "  "
   },
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "explorer.icon.enableVimDevicons": true,
-  "explorer.file.autoReveal": true,
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit",
@@ -62,13 +76,5 @@
   },
   "explorer.file.hiddenRules": {
     "patternMatches": ["^\\.git$", "^\\node_modules$", "^\\plugged$"]
-  },
-  "explorer.git.icon.status.added": "✚",
-  "explorer.git.icon.status.deleted": "✖",
-  "explorer.git.icon.status.renamed": "➜",
-  "explorer.git.icon.status.unmerged": "≠",
-  "explorer.git.icon.status.untracked": "?",
-  "explorer.git.icon.status.modified": "✹",
-  "explorer.git.icon.status.ignored": "☒",
-  "explorer.git.icon.status.mixed": "*"
+  }
 }

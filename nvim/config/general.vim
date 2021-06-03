@@ -44,16 +44,19 @@ set ignorecase
 set smartcase 
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
 set foldmethod=syntax
-set foldlevel=99
 set shortmess+=c
 set redrawtime=10000
+set history=1000                        " store the last 1000 command-lines entered
+set ttyfast                             " faster redrawing
 syntax sync fromstart
 
 " ================ Folds ============================
 
-set foldmethod=indent   "fold based on indent
-set foldnestmax=3       "deepest fold is 3 levels
+set foldmethod=syntax   "fold based on indent
+set foldnestmax=10       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
+set foldlevel=1
+set foldlevelstart=99
 
 " ================ Scrolling ========================
 
@@ -63,11 +66,10 @@ set sidescroll=1
 
 " ================ Turn Off Swap Files ==============
 
-set noswapfile
-set nobackup
+set noswapfile                          " Don't create swapfiles for new buffers
+set nobackup                            " don't use backup files
 set nowb
 set nowritebackup                       " This is recommended by coc
 
 " let g:ruby_host_prog='~/.local/share/gem/ruby/2.7.0/bin/neovim-ruby-host'
-let g:gitblame_date_format = '%d/%m/%Y'
 

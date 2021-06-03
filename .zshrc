@@ -5,12 +5,12 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Alias
-export PROJECTS=$HOME/Documents/projects
-export STHIMA=$HOME/Documents/sthima
+export PROJECTS=$HOME/Documents/projects/personal
+export STHIMA=$HOME/Documents/projects/sthima
 
 # Dev
 alias gitt="git tag | sort -V | grep stag"
-alias _nvim=$HOME/Documents/softwares/nvim.appimage
+alias nvim=$HOME/Documents/softwares/nvim.appimage
 alias insomnia=$HOME/Documents/softwares/Insomnia.Core-2021.3.0.AppImage
 
 # Github CLI
