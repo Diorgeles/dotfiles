@@ -78,13 +78,17 @@ let g:which_key_map.p = {
 
 let g:which_key_map.g = {
       \ 'name' : '+Git' ,
-      \ 'b' : [':Gblame'      , 'blame'],
-      \ 'c' : [':Gcommit'     , 'commit'],
-      \ 'd' : [':Gvdiffsplit' , 'diff split'],
-      \ 't' : [':Gtabedit'    , 'Tab Git'],
-      \ 'g' : [':vertical Git', 'Git'],
-      \ 'r' : [':GRead'       , 'discard'],
-      \ 'l' : [':GV'          , 'git reflog'],
+      \ 'b' : [':Gitsigns toggle_current_line_blame'      , 'blame'],
+      \ 'h': {
+      \ 'name': 'Hunk',
+        \ 's': [':Gitsigns stage_hunk'                    , 'stage hunk'],
+        \ 'u': [':Gitsigns undo_stage_hunk'               , 'undo stage hunk'],
+        \ 'r': [':Gitsigns reset_hunk'                    , 'reset hunk'],
+        \ 'p': [':Gitsigns preview_hunk'                  , 'preview hunk'],
+        \ },
+      \ 'd' : [':Gvdiffsplit'                             , 'diff split'],
+      \ 't' : [':Gtabedit'                                , 'Tab Git'],
+      \ 'l' : [':GV'                                      , 'git reflog'],
       \ }
 
 let g:which_key_map.t = {
@@ -96,11 +100,9 @@ let g:which_key_map.t = {
       \ 'r' : [':FloatermNew ranger'                       , 'ranger'],
       \ 't' : [':FloatermNew --wintype=normal --height=20' , 'terminal'],
       \ 'v' : [':FloatermNew --wintype=vsplit --width=100' , 'vsplit terminal'],
-      \ 'y' : [':FloatermNew ytop'                         , 'ytop'],
+      \ 'b' : [':FloatermNew bpytop'                       , 'bpytop'],
       \ 'h' : [':FloatermNew htop'                         , 'htop'],
-      \ 's' : [':FloatermNew ncdu'                         , 'ncdu'],
       \ }
-
 
 let g:which_key_map.s = {
       \ 'name' : '+Surround' ,

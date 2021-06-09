@@ -51,6 +51,10 @@ Plug 'karb94/neoscroll.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'kshenoy/vim-signature'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'folke/lua-dev.nvim'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'numtostr/FTerm.nvim'
 " Plug 'romgrk/barbar.nvim'
 " Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 " Plug 'wfxr/minimap.vim'
@@ -62,7 +66,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'unblevable/quick-scope'
 Plug 'antoinemadec/coc-fzf'
 " Plug 'nvim-lua/popup.nvim'
 " Plug 'nvim-lua/plenary.nvim'
@@ -70,14 +73,17 @@ Plug 'antoinemadec/coc-fzf'
 
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'dense-analysis/ale'
+
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-signify'
+" Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 Plug 'kdheepak/lazygit.nvim'
+" Plug 'f-person/git-blame.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 call plug#end()
 
@@ -99,6 +105,12 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 source $HOME/.config/nvim/plug-config/closetag.vim
+source $HOME/.config/nvim/plug-config/nvim-tree.vim
+
+lua require'hop'.setup { keys = 'etovxqpdygfblzhckisuran', term_seq_bias = 0.5 }
+lua require('gitsigns').setup()
+lua require('FTerm').setup()
+
 " source $HOME/.config/nvim/plug-config/telescope.vim
 " source $HOME/.config/nvim/plug-config/lsp-config.vim
 " source $HOME/.config/nvim/plug-config/compe-config.lua

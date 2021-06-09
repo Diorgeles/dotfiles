@@ -1,0 +1,11 @@
+pane	Backend	1	:nvim	1	:*	0	:/home/diorgelesdias/Documents/projects/sthima/mbc/mbc-backend	1	nvim	:/tmp/.mount_nvim.aiTVOJB/usr/bin/nvim
+pane	Backend	2	:make	0	:-	0	:/home/diorgelesdias/Documents/projects/sthima/mbc/mbc-backend	1	make	:make run
+pane	Backend	2	:make	0	:-	1	:/home/diorgelesdias/Documents/softwares	0	zsh	:
+pane	Web	1	:nvim	0	:-	0	:/home/diorgelesdias	1	nvim	:/tmp/.mount_nvim.aJE1Mqp/usr/bin/nvim
+pane	Web	2	:zsh	1	:*	0	:/home/diorgelesdias	1	zsh	:
+pane	Web	2	:zsh	1	:*	1	:/home/diorgelesdias	0	zsh	:
+window	Backend	1	1	:*	c49e,284x55,0,0,1
+window	Backend	2	0	:-	c861,284x55,0,0{142x55,0,0,2,141x55,143,0,3}
+window	Web	1	0	:-	c4a1,284x55,0,0,4
+window	Web	2	1	:*	3786,284x55,0,0{140x55,0,0,5,143x55,141,0,6}
+state	Backend	

@@ -8,10 +8,9 @@ set termguicolors
 " colorscheme gruvbox
 
 let g:everforest_background = 'hard'
-let g:everforest_enable_italic = 1
-let g:everforest_disable_italic_comment = 1
 let g:airline_theme='everforest'
 colorscheme everforest
+
 
 " =========================== General ===========================
 set mouse=a
@@ -47,7 +46,6 @@ set foldmethod=syntax
 set shortmess+=c
 set redrawtime=10000
 set history=1000                        " store the last 1000 command-lines entered
-set ttyfast                             " faster redrawing
 syntax sync fromstart
 
 " ================ Folds ============================
@@ -73,3 +71,4 @@ set nowritebackup                       " This is recommended by coc
 
 " let g:ruby_host_prog='~/.local/share/gem/ruby/2.7.0/bin/neovim-ruby-host'
 
+let g:gitblame_date_format = '%d/%m/%Y'
