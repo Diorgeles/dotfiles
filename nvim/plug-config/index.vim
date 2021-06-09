@@ -105,7 +105,6 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 source $HOME/.config/nvim/plug-config/closetag.vim
-source $HOME/.config/nvim/plug-config/nvim-tree.vim
 
 lua require'hop'.setup { keys = 'etovxqpdygfblzhckisuran', term_seq_bias = 0.5 }
 lua require('gitsigns').setup()
