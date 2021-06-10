@@ -2,7 +2,6 @@ let mapleader="\<space>"
 
 " Open extensions
 nnoremap <c-p> :Files<cr>
-nnoremap <c-P> :Files<cr>
 nnoremap <c-f> :CocSearch<space>
 nnoremap ge :CocCommand explorer<CR>
 

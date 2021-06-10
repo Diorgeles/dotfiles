@@ -14,6 +14,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tjdevries/colorbuddy.nvim'
+" Plug 'hoob3rt/lualine.nvim'
+" Plug 'kyazdani42/nvim-web-devicons'
 
 " Syntax
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -77,11 +79,9 @@ Plug 'dense-analysis/ale'
 
 " Git
 Plug 'tpope/vim-fugitive'
-" Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 Plug 'kdheepak/lazygit.nvim'
-" Plug 'f-person/git-blame.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 
@@ -109,7 +109,6 @@ source $HOME/.config/nvim/plug-config/closetag.vim
 lua require'hop'.setup { keys = 'etovxqpdygfblzhckisuran', term_seq_bias = 0.5 }
 lua require('gitsigns').setup()
 lua require('FTerm').setup()
-
 " source $HOME/.config/nvim/plug-config/telescope.vim
 " source $HOME/.config/nvim/plug-config/lsp-config.vim
 " source $HOME/.config/nvim/plug-config/compe-config.lua

@@ -1,15 +1,16 @@
 " =========================== Tema ===========================
 set termguicolors
 
-" let g:gruvbox_contrast_dark="medium"
-" let g:gruvbox_undercurl=1
-" let g:gruvbox_underline=0
-" let g:airline_theme='gruvbox'
-" colorscheme gruvbox
+let g:gruvbox_contrast_dark="medium"
+let g:gruvbox_undercurl=1
+let g:gruvbox_underline=0
+let g:gruvbox_invert_selection=0
+let g:airline_theme='gruvbox'
+colorscheme gruvbox
 
-let g:everforest_background = 'hard'
-let g:airline_theme='everforest'
-colorscheme everforest
+" let g:everforest_background = 'hard'
+" let g:airline_theme='everforest'
+" colorscheme everforest
 
 
 " =========================== General ===========================

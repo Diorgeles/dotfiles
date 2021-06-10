@@ -7,5 +7,3 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 " let g:airline#extensions#tabline#show_tab_count = 0    " dont show tab numbers on the right
 " let g:airline#extensions#tabline#show_buffers = 0      " dont show buffers in the tabline
 " let g:airline#extensions#tabline#tab_min_count = 2     " minimum of 2 tabs needed to display the tabline
-" let g:airline#extensions#tabline#show_splits = 0       " disables the buffer name that displays on the right of the tabline
-" let g:airline#extensions#tabline#show_tab_nr = 1       " disable tab numbers
