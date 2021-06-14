@@ -40,8 +40,6 @@ let g:which_key_map.e = {
 
 let g:which_key_map.f = {
       \ 'name' : '+Find' ,
-      \ 'e' : [':HopWord'              ,'Easymotion'],
-      \ 'f' : [':RG'                   , 'Find words'],
       \ }
 
 let g:which_key_map.c = {
@@ -55,7 +53,6 @@ let g:which_key_map.c = {
       \ 'o' : [':CocList outline'                           , 'coc outline'],
       \ 's' : [':CocList -I symbols'                        , 'coc -I symbols'],
       \ 'j' : [':CocNext'                                   , 'coc-next'],
-      \ 'f' : ['<Plug>(coc-format-selected)'                , 'coc-format-selected'],
       \ 'p' : ['<Plug>(coc-refactor)'         , 'coc-refactor'],
       \ 'r' : ['<Plug>(coc-rename)'           , 'coc-rename'],
       \ 'q' : ['<Plug>(coc-fix-current)'           , 'coc-fix-current'],

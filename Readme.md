@@ -11,4 +11,6 @@
   ln -s $PWD/.gitconfig ~/
   ln -s $PWD/alacritty ~/.config
   ln -s $PWD/lazygit ~/.config
+  ln -s $PWD/i3 ~/.config
+  ln -s $PWD/polybar ~/.config
 ```

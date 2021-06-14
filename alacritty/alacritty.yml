@@ -48,7 +48,7 @@ schemes:
       white: "#ebdbb2"
 
 ########### INITIAL CONFIG ###########
-colors: *everforest_dark_hard
+colors: *grouvbox_dark
 
 font:
   normal:
@@ -64,12 +64,11 @@ font:
     family: "JetBrains Mono"
     style: Bold Italic
 
-  # size: 12
-
 selection:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: true
 
-decorations: none
+decorations: full
+background_opacity: 1.00
 
 live_config_reload: true

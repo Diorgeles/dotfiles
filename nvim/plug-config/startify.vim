@@ -16,7 +16,11 @@ let g:startify_bookmarks = [
       \ { 't': '~/.tmux.conf' },
       \ { 'G': '~/.gitconfig' },
       \ { 'l': '~/.config/lazygit/config.yml' },
+      \ { 'r': '~/.config/ranger/rc.conf'},
+      \ { 's': '~/.config/sway/config'},
+      \ { 'i': '~/.config/i3/config'},
       \ ]
+
 
 let g:startify_session_dir = '~/.config/nvim/session'
 let g:startify_change_to_vcs_root = 1

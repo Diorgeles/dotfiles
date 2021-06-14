@@ -18,10 +18,10 @@ set mouse=a
 set hidden
 set nu
 set relativenumber
+" set cursorline
 set inccommand=split
 set incsearch
 set hlsearch
-set cursorline
 set nowrap
 set showcmd
 set updatetime=300
@@ -38,8 +38,6 @@ set tabstop=2                           " Insert 2 spaces for a tab
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set autoindent
 set smartindent
-" set softtabstop=2                       " number of spaces in tab when editing
-" set copyindent 
 set ignorecase
 set smartcase 
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
@@ -47,6 +45,7 @@ set foldmethod=syntax
 set shortmess+=c
 set redrawtime=10000
 set history=1000                        " store the last 1000 command-lines entered
+set synmaxcol=200
 syntax sync fromstart
 
 " ================ Folds ============================
