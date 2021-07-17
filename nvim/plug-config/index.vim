@@ -7,28 +7,29 @@ endif
 
 call plug#begin()
 " Temas
-Plug 'gruvbox-community/gruvbox'
+Plug 'sainnhe/gruvbox-material'
 Plug 'sainnhe/forest-night'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'sainnhe/sonokai'
+Plug 'sainnhe/edge'
+Plug 'rktjmp/lush.nvim'
+Plug 'christianchiarulli/nvcode-color-schemes.vim'
+Plug 'lifepillar/vim-gruvbox8'
+Plug 'navarasu/onedark.nvim'
+Plug 'folke/tokyonight.nvim'
+
 Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tjdevries/colorbuddy.nvim'
-" Plug 'hoob3rt/lualine.nvim'
-" Plug 'kyazdani42/nvim-web-devicons'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Syntax
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
 Plug 'alvan/vim-closetag' 
 Plug 'SirVer/ultisnips'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'p00f/nvim-ts-rainbow'
+Plug 'romgrk/nvim-treesitter-context'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 " Plug 'sheerun/vim-polyglot'
-" Plug 'yuezk/vim-js'
-" Plug 'maxmellon/vim-jsx-pretty'
-" Plug 'p00f/nvim-ts-rainbow'
 
 " Editor
 Plug 'Yggdroot/indentLine'
@@ -56,22 +57,12 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'folke/lua-dev.nvim'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
-Plug 'numtostr/FTerm.nvim'
-" Plug 'romgrk/barbar.nvim'
-" Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
-" Plug 'wfxr/minimap.vim'
-" Plug 'preservim/tagbar'
-" Plug 'wakatime/vim-wakatime'
-" Plug 'neovim/nvim-lspconfig'
-" Plug 'hrsh7th/nvim-compe'
+Plug 'sunjon/shade.nvim'
 
 " Find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf'
-" Plug 'nvim-lua/popup.nvim'
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'nvim-telescope/telescope.nvim'
 
 " Lint
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -80,7 +71,6 @@ Plug 'dense-analysis/ale'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'junegunn/gv.vim'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
@@ -107,8 +97,9 @@ source $HOME/.config/nvim/plug-config/vista.vim
 source $HOME/.config/nvim/plug-config/closetag.vim
 
 lua require'hop'.setup { keys = 'etovxqpdygfblzhckisuran', term_seq_bias = 0.5 }
-lua require('gitsigns').setup()
-lua require('FTerm').setup()
+" lua require('gitsigns').setup()
+" lua require'nvim-treesitter.configs'.setup { highlight = { enable = true }, context_commentstring = { enable = true }, rainbow = { enable = true } } 
+" lua require'shade'.setup({ overlay_opacity = 50, opacity_step = 1, keys = { brightness_up= '<C-Up>', brightness_down= '<C-Down>'} })
 " source $HOME/.config/nvim/plug-config/telescope.vim
 " source $HOME/.config/nvim/plug-config/lsp-config.vim
 " source $HOME/.config/nvim/plug-config/compe-config.lua

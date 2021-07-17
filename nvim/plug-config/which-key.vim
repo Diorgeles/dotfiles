@@ -75,7 +75,7 @@ let g:which_key_map.p = {
 
 let g:which_key_map.g = {
       \ 'name' : '+Git' ,
-      \ 'b' : [':Gitsigns toggle_current_line_blame'      , 'blame'],
+      \ 'b' : [':Git blame'                               , 'blame'],
       \ 'h': {
       \ 'name': 'Hunk',
         \ 's': [':Gitsigns stage_hunk'                    , 'stage hunk'],
@@ -117,8 +117,8 @@ let g:which_key_map.s = {
 let g:which_key_map.w = {
       \ 'name' : '+Windows' ,
       \ '=' : [ '<C-w>='               , 'balance windows' ],
-      \ '1' : [ '<C-W>v'               , 'split right'],
-      \ '2' : [ '<C-W>s'               , 'split below'],
+      \ '2' : [ '<C-W>v'               , 'split right'],
+      \ '-' : [ '<C-W>s'               , 'split below'],
       \ 'l' : [ '<C-W>r'               , 'move right'],
       \ 'h' : [ '<C-W>H'               , 'move left'],
       \ 'w' : [ ':vertical resize 60'  , 'resize this window'],

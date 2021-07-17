@@ -12,7 +12,7 @@ export STHIMA=$HOME/Documents/projects/sthima
 alias gitt="git tag | sort -V | grep stag"
 alias fmon=$HOME/monitor.sh
 alias fnote=$HOME/notebook-monitor.sh
-alias nvim=$HOME/Documents/softwares/nvim.appimage
+# alias nvim=$HOME/Documents/softwares/nvim.appimage
 # alias insomnia=$HOME/Documents/softwares/Insomnia.Core-2021.3.0.AppImage
 
 # Github CLI

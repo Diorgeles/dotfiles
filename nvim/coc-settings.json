@@ -19,8 +19,7 @@
   "explorer.git.icon.status.mixed": "*",
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
-  "explorer.icon.enableVimDevicons": true,
-  "explorer.file.autoReveal": true,
+  "explorer.file.reveal.auto": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",

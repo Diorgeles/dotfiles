@@ -5,20 +5,42 @@ let g:gruvbox_contrast_dark="medium"
 let g:gruvbox_undercurl=1
 let g:gruvbox_underline=0
 let g:gruvbox_invert_selection=0
-let g:airline_theme='gruvbox'
-colorscheme gruvbox
+let g:gruvbox_bold = 1
+let g:airline_theme='gruvbox_material'
+colorscheme gruvbox8_hard
+
+" let g:gruvbox_material_statusline_style = 'mix'
+" let g:gruvbox_material_background = 'medium'
+" let g:airline_theme='gruvbox_material'
+" colorscheme gruvbox-material
 
 " let g:everforest_background = 'hard'
 " let g:airline_theme='everforest'
+" let g:everforest_cursor = 'red'
+" let g:everforest_diagnostic_text_highlight = 1
 " colorscheme everforest
 
+" let g:edge_style = 'aura'
+" colorscheme edge
+
+" let g:sonokai_style = 'shusia'
+" colorscheme sonokai
+
+" let g:airline_theme='onedark'
+" let g:onedark_style = 'darker'
+" colorscheme onedark
+
+" let g:tokyonight_style = "night"
+" let g:tokyonight_italic_functions = 1
+" let g:airline_theme='onedark'
+" colorscheme tokyonight
 
 " =========================== General ===========================
 set mouse=a
 set hidden
 set nu
 set relativenumber
-" set cursorline
+set cursorline
 set inccommand=split
 set incsearch
 set hlsearch
@@ -41,7 +63,6 @@ set smartindent
 set ignorecase
 set smartcase 
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
-set foldmethod=syntax
 set shortmess+=c
 set redrawtime=10000
 set history=1000                        " store the last 1000 command-lines entered
@@ -70,5 +91,4 @@ set nowb
 set nowritebackup                       " This is recommended by coc
 
 " let g:ruby_host_prog='~/.local/share/gem/ruby/2.7.0/bin/neovim-ruby-host'
-
 let g:gitblame_date_format = '%d/%m/%Y'

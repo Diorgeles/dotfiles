@@ -84,8 +84,8 @@ client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #2f343f
 
 exec compton &
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh --blocks
-# exec_always --no-startup-id $HOME/.config/polybar/launch.sh --panels
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh --blocks
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --panels
 
 #####################################
 #    Workspace & Bind configs       #
@@ -137,19 +137,22 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+set $mon 'HDMI1'
+set $note 'eDP1'
+
 # switch to workspace in two display
-# bindsym Mod1+Control+h workspace number $ws2, workspace number $ws1
-# bindsym Mod1+Control+j workspace number $ws4, workspace number $ws3
-# bindsym Mod1+Control+k workspace number $ws6, workspace number $ws5
-# bindsym Mod1+Control+l workspace number $ws8, workspace number $ws7
+bindsym Mod1+Control+h workspace number $ws2, workspace number $ws1
+bindsym Mod1+Control+j workspace number $ws4, workspace number $ws3
+bindsym Mod1+Control+k workspace number $ws6, workspace number $ws5
+bindsym Mod1+Control+l workspace number $ws8, workspace number $ws7
 
 # switch to workspace in one display
-bindsym Mod1+Control+h workspace number $ws1
-bindsym Mod1+Control+j workspace number $ws2
-bindsym Mod1+Control+k workspace number $ws3
-bindsym Mod1+Control+l workspace number $ws4
-bindsym Mod1+Control+5 workspace number $ws5
-bindsym Mod1+Control+6 workspace number $ws6
+# bindsym Mod1+Control+h workspace number $ws1
+# bindsym Mod1+Control+j workspace number $ws2
+# bindsym Mod1+Control+k workspace number $ws3
+# bindsym Mod1+Control+l workspace number $ws4
+# bindsym Mod1+Control+5 workspace number $ws5
+# bindsym Mod1+Control+6 workspace number $ws6
 
 #
 # move focused container to workspace
@@ -165,17 +168,17 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Comportamento dos workspaces in two display
-# workspace $ws1 output primary
-# workspace $ws2 output eDP1
-#
-# workspace $ws3 output primary
-# workspace $ws4 output eDP1
-#
-# workspace $ws5 output primary
-# workspace $ws6 output eDP1
-#
-# workspace $ws7 output primary
-# workspace $ws8 output eDP1
+workspace $ws1 output $mon
+workspace $ws2 output $note
+
+workspace $ws3 output $mon
+workspace $ws4 output $note
+
+workspace $ws5 output $mon
+workspace $ws6 output $note
+
+workspace $ws7 output $mon
+workspace $ws8 output $note
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -213,8 +216,8 @@ assign [class="Alacritty"] $ws1
 assign [class="Insomnia"] $ws2
 assign [class="Vivaldi"] $ws3
 for_window [class="Spotify"] move window to workspace $ws4
-# assign [class="Notion"] $ws5
-# assign [class="Telegram"] $ws8
+assign [class="Notion"] $ws5
+assign [class="Telegram"] $ws8
 
 ## Open specific applications in floating mode
 for_window [class="Pavucontrol"] floating enable border normal
